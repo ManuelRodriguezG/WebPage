@@ -18,7 +18,7 @@
 	<div class="container">
   	<?php 
 		include "../app/vistas/paginas/modules/carousel/carousel-single.php";
-		//include "../app/vistas/paginas/modules/card.php";
+		include "../app/vistas/paginas/modules/categories/categories-gallery.php";
 	?>
 	</div>
 </body>

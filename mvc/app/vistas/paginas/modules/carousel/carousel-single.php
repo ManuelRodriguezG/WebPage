@@ -38,7 +38,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/producto.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/producto.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
@@ -89,7 +89,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/filtro.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/filtro.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
@@ -140,7 +140,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/red.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/red.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
@@ -191,7 +191,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/calentador.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/calentador.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
@@ -242,7 +242,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/adorno.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/adorno.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
@@ -293,7 +293,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/pecera.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/pecera.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
@@ -344,7 +344,7 @@
 	    		<div id="product-card" class="">
 	        		<div id="product-front">
 	        			<div class="shadow"></div>
-	            		<img src="http://localhost/WebPage/WebPage/mvc/melorautopartesweb/image/products/bettas.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
+	            		<img src="http://localhost/WebPage/WebPage/mvc/image/products/bettas.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 	            		<div class="image_overlay"></div>
 	            <!--<div id="view_details">View details</div>-->
 	            			<div class="stats">        
