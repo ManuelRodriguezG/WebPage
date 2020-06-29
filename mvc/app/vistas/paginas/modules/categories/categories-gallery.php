@@ -106,12 +106,13 @@
 		</div>
 		
 	</div>
-	<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	<a class="carousel-control-prev categories-gallery-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+		<i class="fas fa-chevron-left icon-categories-gallery"></i>
 		<span class="sr-only">Previous</span>
 	</a>
-	<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	<a class="carousel-control-next categories-gallery-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+		
+		<i class="fas fa-chevron-right icon-categories-gallery"></i>
 		<span class="sr-only">Next</span>
 	</a>
 </div>
@@ -124,21 +125,25 @@
 
 
 <style type="text/css">
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+.icon-categories-gallery{
+	color: black;
+}
+.categories-gallery-control-prev{
+	width: 50px;
+    height: 50px;
+    top: 50%;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
 }
 
-body {
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	flex-direction: column;
-	min-height: 100vh;
-	font-family: "Raleway", sans-serif;
-	font-size: 14px;
+.categories-gallery-control-next{
+	width: 50px;
+    height: 50px;
+    top: 50%;
+    background: white;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.3);
 }
 
 .wrapper {
@@ -147,51 +152,6 @@ body {
 	background-color: pink;
 	-webkit-box-flex: 1;
 	flex-grow: 1;
-}
-
-header {
-	display: -webkit-box;
-	display: flex;
-	height: 65px;
-	background-color: #ffffff;
-	-webkit-box-align: center;
-	align-items: center;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-}
-
-.sidebar {
-	min-width: 120px;
-	background-color: #1f282f;
-}
-
-.sidebar-list {
-	display: -webkit-box;
-	display: flex;
-	margin-top: 30px;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	flex-flow: column wrap;
-	-webkit-box-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	justify-content: center;
-}
-
-.sidebar-item {
-	margin-top: 25px;
-	cursor: pointer;
-	color: #3a3d46;
-	font-size: 24px;
-	-webkit-transition: color 200ms ease;
-	transition: color 200ms ease;
-}
-.sidebar-item:hover {
-	color: #ffffff;
-}
-
-.sb-active {
-	color: #ffffff;
 }
 
 .content {
@@ -387,6 +347,17 @@ input[type="search"] {
 	justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
+}
+
+
+@media only screen and (max-width:992px){
+	.card{
+		width: 130px;
+		height:100px;
+	}
+	.content{
+		padding:0px !important;
+	}
 }
 
 </style>

@@ -19,8 +19,14 @@
   	<?php 
 		include "../app/vistas/paginas/modules/carousel/carousel-single.php";
 		include "../app/vistas/paginas/modules/categories/categories-gallery.php";
+
 	?>
 	</div>
+	<?php 
+	
+		
+		include "../app/vistas/includes/footer.php";
+	?>
 </body>
 </html>
     
