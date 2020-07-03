@@ -7,8 +7,12 @@
       font-family: "Free Script";
       src: url("fonts/FREESCPT.TTF");
     }
+    @font-face {
+      font-family: "Lato";
+      src: url("fonts/header/Karla-Regular.ttf");
+    }
     .navigation-link{
-        font-size: 30px;
+        
         color:black !important;
     }
     .navigation-nav{
@@ -49,7 +53,8 @@
         border-top:7px solid rgba(0, 0, 0, 0);  
     }
     .label-nav{
-        font-size: 30px;
+        font-size: 15px;
+        cursor:pointer;
         transition: 2s;
     }
     #logo-page{
@@ -72,6 +77,8 @@
     }
     .header-navbar-dark .link-header-navbar-sub{
         color: black !important;
+        position: relative;
+        text-align: center;
     }
     .header-navbar{
         transition: 2s
@@ -122,9 +129,37 @@
     .header-navbar{
         z-index: 5;
     }
+    .header-navbar-dark .link-header-navbar-sub:hover{
+        background: #ffffffa6 !important;
 
+    }
+    .header-navbar-dark .link-header-navbar-sub::before{
+        content:"";
+        position: absolute;
+        bottom: 0%;
+        left: 37%;
+        width:25%;
+        height: 1px;
+        background: black;
+        display: block;
+        -webkit-transform-origin:right top;
+        -ms-transform-origin:right top;
+        -webkit-transform:scale(0, 1);
+        -ms-transform:scale(0, 1);
+        -webkit-transition:transform 0.4s cubic-bezier(1, 0, 0, 1);
+        transition:transform 0.4s cubic-bezier(1, 0, 0, 1);
+    }
+    .header-navbar-dark .link-header-navbar-sub:hover::before{
+        
+        -webkit-transform-origin:left top;
+        -ms-transform-origin:left top;
+        transform-origin:left top;
+        -webkit-transform:scale(1, 1);
+        -ms-transform:scale(1, 1);
+        transform:scale(1, 1);
+    }
 </style>
-<header class="header-navbar sticky-top header-navbar-dark header-navbar" style="font-family: Free Script;width: 100%;padding: 0px 15px;">
+<header class="header-navbar sticky-top header-navbar-dark header-navbar" style="font-family: Lato;width: 100%;padding: 0px 15px;">
     <nav class="navbar navbar-expand-lg navbar-light a-bg navigation-nav">
       <a class="navbar-brand" href="#">
           <img id="logo-page" src="image/logo/logoBw.png">
@@ -140,19 +175,23 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link link-header-navbar navigation-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link link-header-navbar navigation-link dropdown-toggle label-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
                       <label class="label-nav">Bettas</label>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item link-header-navbar-sub" href="#">
-                        <label class="label-nav">Action</label>
+                        <label class="label-nav">Corona</label>
                     </a>
                     <a class="dropdown-item link-header-navbar-sub" href="#">
-                        <label class="label-nav">Another action</label>
-
+                        <label class="label-nav">Media luna</label>
                     </a>
-
+                    <a class="dropdown-item link-header-navbar-sub" href="#">
+                        <label class="label-nav">Dumbo</label>
+                    </a>
+                    <a class="dropdown-item link-header-navbar-sub" href="#">
+                        <label class="label-nav">Plakat</label>
+                    </a>
                 </div>
             </li>
             <li class="nav-item active">
