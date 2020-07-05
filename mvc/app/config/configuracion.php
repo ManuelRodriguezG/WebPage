@@ -5,7 +5,7 @@
 	define('RUTA_APP',dirname(dirname(__FILE__)));
 
 	//Ruta url Ejemplo: http://localhost/ExamplePanoramex/
-	define('RUTA_URL','http://localhost/WebPage/WebPage/mvc/');
+	define('RUTA_URL','http://localhost/WebPage/mvc/');
 	
 
 	define('NOMBRE_SITIO','Black & White Bettas');

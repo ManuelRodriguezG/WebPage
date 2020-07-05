@@ -3,6 +3,37 @@
 	  font-family: "Noto Sans";
 	  src: url("../../../fonts/carousel/single/NotoSansJP-Regular.OTF");
 	}
+	.row-carousel-single-title{
+		margin: 0;
+	}
+	.container-carousel-single-title{
+		padding: 10px;
+	}
+	.label-carousel-single-title{
+		font-family: Noto Sans;
+	}
+	#carousel-single .container-btn-carousel-single{
+		padding: 20px 0px;
+		text-align: center;
+		justify-content: center;
+	}
+	#carousel-single .icon-cart-carousel-single{
+		padding: 4px;
+	}
+	#carousel-single .btn-carousel-single{
+		background: white;
+		border-radius: 20px;
+		border:2px solid #b0ded3;
+		color: gray;
+		box-shadow: 0px 1.5px 4px 0px rgba(0,0,0,0.5);
+	}
+	#carousel-single .btn-carousel-single:hover{
+		background: #b0ded3;
+		color: black;
+	}
+	#carousel-single .owl-stage-outer{
+		padding: 20px 0px;
+	}
 	.item-product{
 		padding:10px;
 		max-width: 264px;
@@ -98,6 +129,9 @@
 		            transition: all 100ms ease-out;
 	}
 	#carousel-single .owl-nav button.owl-prev:focus{
+		outline: none !important;
+	}
+	#carousel-single .owl-nav button.owl-next:focus{
 		outline: none !important;
 	}
 	#carousel-single .owl-nav{

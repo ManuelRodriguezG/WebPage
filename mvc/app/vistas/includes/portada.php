@@ -20,13 +20,13 @@
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="img-nav-port" src="image/portada/IMG_0045.jpg" width="100%" height="100%">
+				<img class="img-nav-port" src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mlm-home-desktop-slider-picture-9460ce2d-f7af-4527-9d08-f63d87cafbc0.jpg" width="100%" height="100%">
 			</div>
 			<div class="carousel-item">
-				<img class="img-nav-port" src="image/portada/IMG_0045.jpg" width="100%" height="100%">
+				<img class="img-nav-port" src="https://http2.mlstatic.com/optimize/o:f_webp/resources/exhibitors/MLM-temporada-rebajas/23be7f00-ba48-11ea-ae1b-8dc4f2de18be-home-slider_desktop.jpg" width="100%" height="100%">
 			</div>
 			<div class="carousel-item">
-				<img class="img-nav-port" src="image/portada/IMG_0045.jpg" width="100%" height="100%">
+				<img class="img-nav-port" src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mlm-home-desktop-slider-picture-f6f43ef3-5177-40fc-8806-7b426fee43ae.jpg" width="100%" height="100%">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

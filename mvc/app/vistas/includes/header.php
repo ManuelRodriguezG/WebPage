@@ -56,9 +56,10 @@
         font-size: 15px;
         cursor:pointer;
         transition: 2s;
+        margin:0px;
     }
     #logo-page{
-        width: 70px;
+        width: 50px;
     }
     .logo-page-big{
         width: 100px !important; 
@@ -68,6 +69,9 @@
     }
     .header-navbar-transparent .link-header-navbar{
         color: black !important;
+    }
+    .header-navbar-color{
+        background: #b0ded3;
     }
     .header-navbar-dark{
         background: black;
@@ -159,7 +163,7 @@
         transform:scale(1, 1);
     }
 </style>
-<header class="header-navbar sticky-top header-navbar-dark header-navbar" style="font-family: Lato;width: 100%;padding: 0px 15px;">
+<header class="header-navbar sticky-top header-navbar-color header-navbar" style="font-family: Lato;width: 100%;padding: 0px 15px;box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.5);">
     <nav class="navbar navbar-expand-lg navbar-light a-bg navigation-nav">
       <a class="navbar-brand" href="#">
           <img id="logo-page" src="image/logo/logoBw.png">
