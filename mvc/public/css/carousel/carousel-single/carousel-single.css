@@ -25,7 +25,7 @@
 		border-radius: 20px;
 		border:2px solid #b0ded3;
 		color: gray;
-		box-shadow: 0px 1.5px 4px 0px rgba(0,0,0,0.5);
+		/*box-shadow: 0px 1.5px 4px 0px rgba(0,0,0,0.5);*/
 	}
 	#carousel-single .btn-carousel-single:hover{
 		background: #b0ded3;
