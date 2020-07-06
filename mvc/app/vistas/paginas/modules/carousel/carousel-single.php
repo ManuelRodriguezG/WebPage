@@ -16,11 +16,11 @@
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
 							<div class="stats">
-								<div style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
-									<button class="btn btn-primary" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+								<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
 										<i class="fas fa-share"></i>
 									</button>
-									<button class="btn btn-primary" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
 										<i class="fas fa-shopping-cart"></i>
 									</button>
 								</div>
