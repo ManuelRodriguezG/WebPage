@@ -83,6 +83,14 @@
 							<img src="http://localhost/WebPage/mvc/image/products/filtro.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
+							<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+										<i class="fas fa-share"></i>
+									</button>
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</div>
 							<div class="stats">        
 								<div class="stats-container">
 									<span class="product_price">$390.35</span>
@@ -141,6 +149,14 @@
 							<img src="http://localhost/WebPage/mvc/image/products/red.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
+							<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+										<i class="fas fa-share"></i>
+									</button>
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</div>
 							<div class="stats">        
 								<div class="stats-container">
 									<span class="product_price">$390.35</span>
@@ -199,6 +215,14 @@
 							<img src="http://localhost/WebPage/mvc/image/products/calentador.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
+							<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+										<i class="fas fa-share"></i>
+									</button>
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</div>
 							<div class="stats">        
 								<div class="stats-container">
 									<span class="product_price">$390.35</span>
@@ -257,6 +281,14 @@
 							<img src="http://localhost/WebPage/mvc/image/products/adorno.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
+							<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+										<i class="fas fa-share"></i>
+									</button>
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</div>
 							<div class="stats">        
 								<div class="stats-container">
 									<span class="product_price">$390.35</span>
@@ -315,6 +347,14 @@
 							<img src="http://localhost/WebPage/mvc/image/products/pecera.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
+							<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+										<i class="fas fa-share"></i>
+									</button>
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</div>
 							<div class="stats">        
 								<div class="stats-container">
 									<span class="product_price">$390.35</span>
@@ -373,6 +413,14 @@
 							<img src="http://localhost/WebPage/mvc/image/products/bettas.jpg" alt="" style="width: 224px;height: 220px;object-fit: contain;">
 							<div class="image_overlay"></div>
 							<!--<div id="view_details">View details</div>-->
+							<div class="container-btns-mobil" style="position: absolute;justify-content: right;text-align: right;top: 177px;background: #ffffff00;padding: 5px;width: 100%;">
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;color: gray;border: 2px solid #b0ded3;display: none;border-radius: 20px;">
+										<i class="fas fa-share"></i>
+									</button>
+									<button class="btn btn-primary btn-mobil-carousel-single" style="background: white;border: 2px solid #b0ded3;color: gray;border-radius: 20px;float: right;text-align: right;justify-content: right;">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</div>
 							<div class="stats">        
 								<div class="stats-container">
 									<span class="product_price">$390.35</span>
