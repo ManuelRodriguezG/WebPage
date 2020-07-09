@@ -1,37 +1,4 @@
-<div class="owl-carousel owl-theme" id="categories-gallery">
-	<div class="item">
-		<div class="wrapper">
 
-			<main class="content">
-				<div class="feed-grid">
-
-					<div class="card">
-						<img src="image/products/calentador.jpg" alt="img">
-						<div class="info-center">Calefacción</div>
-					</div>
-					<div class="card"><img src="image/products/adorno.jpg" alt="img">
-						<div class="info-center">Ceramica</div>
-					</div>
-					<div class="card"><img src="image/products/filtro.jpg" alt="img">
-						<div class="info-center">Filtros</div>
-					</div>
-
-					<div class="card"> 
-						<img src="image/products/pecera.jpg" alt="img">
-						<div class="info-center">Peceras</div>
-					</div>
-
-					<div class="card"> 
-						<img src="image/portada/IMG_0045.jpg" alt="img">
-						<div class="info-center">Bettas</div>
-					</div>
-
-
-				</div>
-			</main>
-		</div>
-	</div>
-</div>
 
 
 
@@ -63,7 +30,10 @@
 							<img src="image/portada/IMG_0045.jpg" alt="img">
 							<div class="info-center">Bettas</div>
 						</div>
-
+						<div class="card">
+							<img src="image/products/adorno.jpg" alt="img">
+							<div class="info-center">Ceramica</div>
+						</div>
 
 					</div>
 				</main>
@@ -91,9 +61,10 @@
 							<img src="image/products/filtro.jpg" alt="img">
 							<div class="info-center">Filtros</div>
 						</div>
-
-						
-
+						<div class="card">
+							<img src="image/products/adorno.jpg" alt="img">
+							<div class="info-center">Ceramica</div>
+						</div>
 						<div class="card">
 							<img src="image/products/adorno.jpg" alt="img">
 							<div class="info-center">Ceramica</div>
@@ -117,7 +88,33 @@
 	</a>
 </div>
 
-
+<script type="text/javascript">
+	//width > 1200
+	//max-width: 450px
+	//min-width: 100px
+	//height:150px
+	var ancle = 1;
+	var firstWidth = 0;
+	var secondWidth = 0;
+	$(".feed-grid .card").each(function(){
+		
+	    var height = "150px";
+	    $(this).css("height",height);
+	    //Math.floor(Math.random() * ((máximo+1) - mínimo) + mínimo)
+	    if(ancle == 1){
+	        firstWidth = Math.floor(Math.random() * ((450+1) - 100) + 100);
+	console.log(firstWidth+"px");
+	        $(this).css("width",firstWidth+"px");
+	        ancle++;
+	    }else if(ancle == 2){
+	        secondWidth = 900 - firstWidth;
+	        console.log(secondWidth+"px");
+	        $(this).css("width",secondWidth+"px");
+	        ancle = 1;
+	    }    
+	    
+	});
+</script>
 
 
 
@@ -238,10 +235,10 @@
 		-o-object-fit: cover;
 		object-fit: cover;
 	}
-	.card:nth-child(5) {
+	/*.card:nth-child(5) {
 		-webkit-box-flex: 545px;
 		flex: 545px;
-	}
+	}*/
 
 	.card-half {
 		display: -webkit-box;
