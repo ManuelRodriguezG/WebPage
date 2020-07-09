@@ -1,119 +1,155 @@
 
 
 
-
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<div class="wrapper">
-
-				<main class="content">
-					<div class="feed-grid">
-
-						<div class="card">
-							<img src="image/products/calentador.jpg" alt="img">
-							<div class="info-center">Calefacción</div>
-						</div>
-						<div class="card"><img src="image/products/adorno.jpg" alt="img">
-							<div class="info-center">Ceramica</div>
-						</div>
-						<div class="card"><img src="image/products/filtro.jpg" alt="img">
-							<div class="info-center">Filtros</div>
-						</div>
-
-						<div class="card"> 
-							<img src="image/products/pecera.jpg" alt="img">
-							<div class="info-center">Peceras</div>
-						</div>
-
-						<div class="card"> 
-							<img src="image/portada/IMG_0045.jpg" alt="img">
-							<div class="info-center">Bettas</div>
-						</div>
-						<div class="card">
-							<img src="image/products/adorno.jpg" alt="img">
-							<div class="info-center">Ceramica</div>
-						</div>
-
-					</div>
-				</main>
-			</div>
-		</div>
-		<div class="carousel-item ">
-			<div class="wrapper">
-
-				<main class="content">
-					<div class="feed-grid">
-						
-						<div class="card">
-							<img src="image/products/calentador.jpg" alt="img">
-							<div class="info-center">Calefacción</div>
-						</div>
-						<div class="card"> 
-							<img src="image/portada/IMG_0045.jpg" alt="img">
-							<div class="info-center">Bettas</div>
-						</div>
-						<div class="card"> 
-							<img src="image/products/pecera.jpg" alt="img">
-							<div class="info-center">Peceras</div>
-						</div>
-						<div class="card">
-							<img src="image/products/filtro.jpg" alt="img">
-							<div class="info-center">Filtros</div>
-						</div>
-						<div class="card">
-							<img src="image/products/adorno.jpg" alt="img">
-							<div class="info-center">Ceramica</div>
-						</div>
-						<div class="card">
-							<img src="image/products/adorno.jpg" alt="img">
-							<div class="info-center">Ceramica</div>
-						</div>
-
-						
-					</div>
-				</main>
-			</div>
-		</div>
-		
+<div class="row-categories-gallery">
+	
+	<div>
+		<label class="label-categories-gallery">Categorias</label>
 	</div>
-	<a class="carousel-control-prev categories-gallery-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		<i class="fas fa-chevron-left icon-categories-gallery"></i>
-		<span class="sr-only">Previous</span>
-	</a>
-	<a class="carousel-control-next categories-gallery-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		
-		<i class="fas fa-chevron-right icon-categories-gallery"></i>
-		<span class="sr-only">Next</span>
-	</a>
-</div>
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="wrapper">
 
+					<main class="content">
+						<div class="feed-grid">
+
+							<div class="card">
+								<img src="image/products/calentador.jpg" alt="img">
+								<div class="info-center">Calefacción</div>
+							</div>
+							<div class="card"><img src="image/products/adorno.jpg" alt="img">
+								<div class="info-center">Ceramica</div>
+							</div>
+							<div class="card"><img src="image/products/filtro.jpg" alt="img">
+								<div class="info-center">Filtros</div>
+							</div>
+
+							<div class="card"> 
+								<img src="image/products/pecera.jpg" alt="img">
+								<div class="info-center">Peceras</div>
+							</div>
+
+							<div class="card"> 
+								<img src="image/portada/IMG_0045.jpg" alt="img">
+								<div class="info-center">Bettas</div>
+							</div>
+							<div class="card">
+								<img src="image/products/adorno.jpg" alt="img">
+								<div class="info-center">Ceramica</div>
+							</div>
+
+						</div>
+					</main>
+				</div>
+			</div>
+			<div class="carousel-item ">
+				<div class="wrapper">
+
+					<main class="content">
+						<div class="feed-grid">
+							
+							<div class="card">
+								<img src="image/products/calentador.jpg" alt="img">
+								<div class="info-center">Calefacción</div>
+							</div>
+							<div class="card"> 
+								<img src="image/portada/IMG_0045.jpg" alt="img">
+								<div class="info-center">Bettas</div>
+							</div>
+							<div class="card"> 
+								<img src="image/products/pecera.jpg" alt="img">
+								<div class="info-center">Peceras</div>
+							</div>
+							<div class="card">
+								<img src="image/products/filtro.jpg" alt="img">
+								<div class="info-center">Filtros</div>
+							</div>
+							<div class="card">
+								<img src="image/products/adorno.jpg" alt="img">
+								<div class="info-center">Ceramica</div>
+							</div>
+							<div class="card">
+								<img src="image/products/adorno.jpg" alt="img">
+								<div class="info-center">Ceramica</div>
+							</div>
+
+							
+						</div>
+					</main>
+				</div>
+			</div>
+			
+		</div>
+		<a class="carousel-control-prev categories-gallery-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<i class="fas fa-chevron-left icon-categories-gallery"></i>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next categories-gallery-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			
+			<i class="fas fa-chevron-right icon-categories-gallery"></i>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
 <script type="text/javascript">
 	//width > 1200
 	//max-width: 450px
 	//min-width: 100px
 	//height:150px
-	var ancle = 1;
-	var firstWidth = 0;
-	var secondWidth = 0;
-	$(".feed-grid .card").each(function(){
-		
-	    var height = "150px";
-	    $(this).css("height",height);
-	    //Math.floor(Math.random() * ((máximo+1) - mínimo) + mínimo)
-	    if(ancle == 1){
-	        firstWidth = Math.floor(Math.random() * ((450+1) - 100) + 100);
-	console.log(firstWidth+"px");
-	        $(this).css("width",firstWidth+"px");
-	        ancle++;
-	    }else if(ancle == 2){
-	        secondWidth = 900 - firstWidth;
-	        console.log(secondWidth+"px");
-	        $(this).css("width",secondWidth+"px");
-	        ancle = 1;
-	    }    
-	    
-	});
+
+	//Extra small    < 576px
+	//small          >= 576px
+	//Medium         >= 768px
+	//Large          >= 992px
+	//Extra Large	   >= 1200px
+	$(window).resize(function(){
+		console.log($(window).width());
+		var minimo,maximo,total;
+		if($(window).width() >= 1200){
+			minimo = 150;
+			maximo = 500;
+			total = 1000;
+		}else if($(window).width() >= 992 && $(window).width() < 1200){
+			minimo = 150;
+			maximo = 400;
+			total = 800;
+		}else if($(window).width() >= 768 && $(window).width() < 992){
+			minimo = 150;
+			maximo = 300;
+			total = 600;
+		}else if($(window).width() >= 576 && $(window).width() < 768 && $(window).width() > 357){
+			minimo = 200;
+			maximo = 200;
+			total = 400;
+		}else if($(window).width() <= 357){
+			minimo = 145;
+			maximo = 145;
+			total = 290;
+		}
+
+		var ancle = 1;
+		var firstWidth = 0;
+		var secondWidth = 0;
+		$(".feed-grid .card").each(function(){
+			
+		    var height = "150px";
+		    $(this).css("height",height);
+		    //Math.floor(Math.random() * ((máximo+1) - mínimo) + mínimo)
+		    if(ancle == 1){
+		        firstWidth = Math.floor(Math.random() * ((maximo+1) - minimo) + minimo);
+		console.log(firstWidth+"px");
+		        $(this).css("width",firstWidth+"px");
+		        ancle++;
+		    }else if(ancle == 2){
+		        secondWidth = total - firstWidth;
+		        console.log(secondWidth+"px");
+		        $(this).css("width",secondWidth+"px");
+		        ancle = 1;
+		    }    
+		    
+		});
+	})
 </script>
 
 
@@ -122,6 +158,14 @@
 
 
 <style type="text/css">
+	.label-categories-gallery{
+		font-family: Noto Sans;
+		margin: 0;
+		padding: 10px;
+	}
+	.row-categories-gallery{
+		width: 100%;
+	}
 	.icon-categories-gallery{
 		color: black;
 	}
@@ -155,7 +199,7 @@
 
 	.content {
 		width: 100%;
-		padding: 50px;
+		
 		background-color: #e1e1e1;
 	}
 
@@ -224,6 +268,7 @@
 		width: 320px;
 		height: 320px;
 		margin: 7px;
+		transition: 2s;
 		background-color: #ffffff;
 		box-shadow: 0px 0px 10px 0px rgba(110, 123, 140, 0.3);
 		-webkit-box-flex: 1;
