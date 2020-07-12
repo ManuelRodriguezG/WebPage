@@ -19,7 +19,7 @@
   	<?php 
 		include "../app/vistas/paginas/modules/carousel/carousel-single.php";
 		include "../app/vistas/paginas/modules/categories/categories-gallery.php";
-
+		include "../app/vistas/paginas/modules/reviews/social/social-reviews-single.php";
 	?>
 	</div>
 	<?php 

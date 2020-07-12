@@ -134,7 +134,7 @@
 		$(".feed-grid .card").each(function(){
 			
 		    var height = "150px";
-		    $(this).css("height",height);
+		    //$(this).css("height",height);
 		    //Math.floor(Math.random() * ((máximo+1) - mínimo) + mínimo)
 		    if(ancle == 1){
 		        firstWidth = Math.floor(Math.random() * ((maximo+1) - minimo) + minimo);
@@ -266,7 +266,7 @@
 	.card {
 		position: relative;
 		width: 320px;
-		height: 320px;
+		height: 150px;
 		margin: 7px;
 		transition: 2s;
 		background-color: #ffffff;
