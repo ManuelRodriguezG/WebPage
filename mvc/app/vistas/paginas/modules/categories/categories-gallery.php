@@ -108,41 +108,43 @@
 		var minimo,maximo,total;
 		if($(window).width() >= 1200){
 			minimo = 150;
-			maximo = 500;
+			maximo = 333;
 			total = 1000;
 		}else if($(window).width() >= 992 && $(window).width() < 1200){
 			minimo = 150;
-			maximo = 400;
+			maximo = 266;
 			total = 800;
 		}else if($(window).width() >= 768 && $(window).width() < 992){
 			minimo = 150;
-			maximo = 300;
+			maximo = 200;
 			total = 600;
 		}else if($(window).width() >= 576 && $(window).width() < 768 && $(window).width() > 357){
 			minimo = 200;
-			maximo = 200;
+			maximo = 133;
 			total = 400;
 		}else if($(window).width() <= 357){
-			minimo = 145;
-			maximo = 145;
+			minimo = 96;
+			maximo = 96;
 			total = 290;
 		}
 
 		var ancle = 1;
 		var firstWidth = 0;
 		var secondWidth = 0;
+		var sumFirstWidth = 0;
 		$(".feed-grid .card").each(function(){
 			
 		    var height = "150px";
 		    //$(this).css("height",height);
 		    //Math.floor(Math.random() * ((máximo+1) - mínimo) + mínimo)
-		    if(ancle == 1){
+		    if(ancle == 1 || ancle == 2){
 		        firstWidth = Math.floor(Math.random() * ((maximo+1) - minimo) + minimo);
 		console.log(firstWidth+"px");
 		        $(this).css("width",firstWidth+"px");
+		        sumFirstWidth += firstWidth;
 		        ancle++;
-		    }else if(ancle == 2){
-		        secondWidth = total - firstWidth;
+		    }else if(ancle == 3){
+		        secondWidth = total - sumFirstWidth;
 		        console.log(secondWidth+"px");
 		        $(this).css("width",secondWidth+"px");
 		        ancle = 1;
@@ -150,6 +152,52 @@
 		    
 		});
 	})
+	var minimo,maximo,total;
+		if($(window).width() >= 1200){
+			minimo = 150;
+			maximo = 333;
+			total = 1000;
+		}else if($(window).width() >= 992 && $(window).width() < 1200){
+			minimo = 150;
+			maximo = 266;
+			total = 800;
+		}else if($(window).width() >= 768 && $(window).width() < 992){
+			minimo = 150;
+			maximo = 200;
+			total = 600;
+		}else if($(window).width() >= 576 && $(window).width() < 768 && $(window).width() > 357){
+			minimo = 200;
+			maximo = 133;
+			total = 400;
+		}else if($(window).width() <= 357){
+			minimo = 96;
+			maximo = 96;
+			total = 290;
+		}
+
+		var ancle = 1;
+		var firstWidth = 0;
+		var secondWidth = 0;
+		var sumFirstWidth = 0;
+		$(".feed-grid .card").each(function(){
+			
+		    var height = "150px";
+		    //$(this).css("height",height);
+		    //Math.floor(Math.random() * ((máximo+1) - mínimo) + mínimo)
+		    if(ancle == 1 || ancle == 2){
+		        firstWidth = Math.floor(Math.random() * ((maximo+1) - minimo) + minimo);
+		console.log(firstWidth+"px");
+		        $(this).css("width",firstWidth+"px");
+		        sumFirstWidth += firstWidth;
+		        ancle++;
+		    }else if(ancle == 3){
+		        secondWidth = total - sumFirstWidth;
+		        console.log(secondWidth+"px");
+		        $(this).css("width",secondWidth+"px");
+		        ancle = 1;
+		    }    
+		    
+		});
 </script>
 
 
