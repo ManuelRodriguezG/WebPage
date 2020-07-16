@@ -148,6 +148,9 @@
 		        console.log(secondWidth+"px");
 		        $(this).css("width",secondWidth+"px");
 		        ancle = 1;
+				firstWidth = 0;
+				secondWidth = 0;
+				sumFirstWidth = 0;
 		    }    
 		    
 		});
@@ -195,6 +198,9 @@
 		        console.log(secondWidth+"px");
 		        $(this).css("width",secondWidth+"px");
 		        ancle = 1;
+				firstWidth = 0;
+				secondWidth = 0;
+				sumFirstWidth = 0;
 		    }    
 		    
 		});
