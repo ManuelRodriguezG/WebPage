@@ -154,7 +154,7 @@
                                                     <label for="fade-gallery13"> 
                                                         <img src="https://template.threendy.com/template1/template/images/gallery-main-4-s.jpg" alt="image"> 
                                                     </label>
-                                                </div>
+                                                </div> 
                                                 <div class="thumbnail">
                                                     <label for="fade-gallery14"> 
                                                         <img src="https://template.threendy.com/template1/template/images/gallery-main-3-s.jpg" alt="image"> 
