@@ -12,8 +12,8 @@ include "../app/vistas/includes/header.php";
 	<meta http-equiv="Content-Type" content="text/html;
 	charset=utf-8">
 	<meta name="viewport" content="width=device-width">
-   <link rel="stylesheet" type="text/css" href="<?php echo RUTA_URL; ?>/css/reviews/social/social-reviews-single.css">
-   <title>Threendy universal eBay Listing template</title>
+ <link rel="stylesheet" type="text/css" href="<?php echo RUTA_URL; ?>/css/reviews/social/social-reviews-single.css">
+ <title>Threendy universal eBay Listing template</title>
 </head>
 <body>
 	<table align="center" style="border-spacing: 0px;width: 100%;">
@@ -24,302 +24,256 @@ include "../app/vistas/includes/header.php";
 						<main id="main" class="wrapper">
 							<div class="container">
 								<div class="product-gallery-main">
-									<div id="product-container" data-editor="content"><div class="variant04">
-										<input class="open-check open-modal" id="modal" name="modal" type="checkbox">
-										<input class="open-switch" id="open-switch" type="checkbox">
-										<div class="product-box">
-											<div class="product-images">
-												<div class="fade-gallery gallery-all" data-editor="gallery" data-link="false" data-max="16"> 
-													<span class="empty-marker">http://localhost/WebPage/mvc/image/products/comida_hamster.png</span>
-													<span class="empty-marker">http://localhost/WebPage/mvc/image/products/comida_hamster_2.png</span>
-													<span class="empty-marker">http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png</span>
-													<span class="empty-marker">http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm_2.png</span> 
-
-													<input class="open-check" id="fade-gallery01" name="fade-gallery" checked="checked" type="radio">
-													<input class="open-check" id="fade-gallery02" name="fade-gallery" type="radio">
-													<input class="open-check" id="fade-gallery03" name="fade-gallery" type="radio">
-													<input class="open-check" id="fade-gallery04" name="fade-gallery" type="radio">
-													<div class="holder-img img-box"> 
-														<img src="http://localhost/WebPage/mvc/image/products/comida_hamster.png" alt="image">
-														<img src="http://localhost/WebPage/mvc/image/products/comida_hamster_2.png" alt="image">
-														<img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png" alt="image">
-														<img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm_2.png" alt="image">
-
-														<label for="modal" class="text-label"> 
-															<span>To enlarge please click on the picture</span>
-															<span class="close"><i class="fa fa-times" aria-hidden="true"></i></span> 
-														</label>
-													</div>
-													<div class="switcher">
-														<div class="thumbnail">
-															<label for="fade-gallery01"> 
-																<img src="http://localhost/WebPage/mvc/image/products/comida_hamster.png" alt="image"> 
-															</label>
-														</div>
-														<div class="thumbnail">
-															<label for="fade-gallery02"> 
-																<img src="http://localhost/WebPage/mvc/image/products/comida_hamster_2.png" alt="image"> 
-															</label>
-														</div>
-														<div class="thumbnail">
-															<label for="fade-gallery03"> 
-																<img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png" alt="image"> 
-															</label>
-														</div>
-														<div class="thumbnail">
-															<label for="fade-gallery04"> 
-																<img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm_2.png" alt="image"> 
-															</label>
-														</div>
-														<label for="open-switch" class="switch-label"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
-													</div>
-												</div>
-											</div>
-											<div class="product-description">
-												<div class="box-edit">
-													<h1 data-editor="edit" class="ItemName">Alimento para Hámster Redkite</h1>
-												</div>
-												
-												<div class="col-d">
-													<div class="box-edit main-info" data-editor="editMCE">
-														<h2>Descripción del Producto</h2>
-														<div class="ShortDescription">
-															<p>
-																El Alimento para Hámster de Redkite provee a su mascota todos los nutrientes eseciales para un desarrollo y mantenimiento óptimo.
-															</p>
-														</div>
-													</div>
-													<div class="prise-wrap">
-														<div class="box-edit">
-															<strong class="item-prise" data-editor="edit,dell" contenteditable="false"><span class="PriceInfo">MXN 75.00</span></strong>
-														</div>
-														<div class="box-edit">
-															<span class="paragraph" data-editor="edit,dell">sample VAT.</span>
-														</div>
-														<div class="box-edit paragraph-green" data-editor="editMCE,dell">
-															<span class="paragraph green"><i class="fa fa-check" aria-hidden="true"></i><span>Immediately available</span></span>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-                                   <div>
-                                      <div>
-                                         <h2>Reseñas del Producto</h2>
-                                     </div>
-                                     <div>
-                                         <div class="owl-carousel owl-theme" id="carousel-social-reviews-single">
-                                            <div class="item ">
-                                               <div class="row container-profile-social-page">
-                                                  <div class="image-profile-social-page">
-                                                     <img class="img-profile-social-single" src="https://scontent.fgdl5-2.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/73196204_2526055317490246_8914104120613273600_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=THHVEn4bIRgAX9up4Ll&_nc_ht=scontent.fgdl5-2.fna&oh=4778a56fae6fcf4ab6e15cdd793d88ba&oe=5F326FDB">
-                                                 </div>
-                                                 <div class="container-section-social-single">
-                                                     <label>Black & White Bettas</label>
-                                                 </div>
-                                                 <div class="container-section-social-single" style="width: 100%;display: flex;align-content: center;">
-                                                     <div class="contenedorStars1M" style="width: 108px;position: relative;">
-
-                                                        <i class="far fa-star"></i>
-                                                        <i class="far fa-star"></i>
-                                                        <i class="far fa-star"></i>
-                                                        <i class="far fa-star"></i>
-                                                        <i class="far fa-star"></i>
-                                                        <div class="contenedorStarsM" style="width: 100%;position: absolute;top: 0px;left: 0;white-space: nowrap;color: #ffd200;overflow: hidden;">
-
-                                                           <i class="fas fa-star"></i>
-                                                           <i class="fas fa-star"></i>
-                                                           <i class="fas fa-star"></i>
-                                                           <i class="fas fa-star"></i>
-                                                           <i class="fas fa-star"></i>
-                                                       </div>
+									<div id="product-container" data-editor="content">
+                                        <div class="variant04">
+                                            <input class="open-check open-modal" id="modal" name="modal" type="checkbox">
+                                            <input class="open-switch" id="open-switch" type="checkbox">
+                                            <div class="product-box">
+                                                <div class="product-images">
+                                                    <div class="fade-gallery gallery-all" data-editor="gallery" data-link="false" data-max="16"> 
+                                                        <span class="empty-marker">http://localhost/WebPage/mvc/image/products/comida_hamster.png</span>
+                                                        <span class="empty-marker">http://localhost/WebPage/mvc/image/products/comida_hamster_2.png</span>
+                                                        <span class="empty-marker">http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png</span>
+                                                        <span class="empty-marker">http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm_2.png</span> 
+                                                        <input class="open-check" id="fade-gallery01" name="fade-gallery" checked="checked" type="radio">
+                                                        <input class="open-check" id="fade-gallery02" name="fade-gallery" type="radio">
+                                                        <input class="open-check" id="fade-gallery03" name="fade-gallery" type="radio">
+                                                        <input class="open-check" id="fade-gallery04" name="fade-gallery" type="radio">
+                                                        <div class="holder-img img-box"> 
+                                                            <img src="http://localhost/WebPage/mvc/image/products/comida_hamster.png" alt="image">
+                                                            <img src="http://localhost/WebPage/mvc/image/products/comida_hamster_2.png" alt="image">
+                                                            <img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png" alt="image">
+                                                            <img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm_2.png" alt="image">
+                                                            <label for="modal" class="text-label"> 
+                                                                <span>To enlarge please click on the picture</span>
+                                                                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span> 
+                                                            </label>
+                                                        </div>
+                                                        <div class="switcher">
+                                                            <div class="thumbnail">
+                                                                <label for="fade-gallery01"> 
+                                                                    <img src="http://localhost/WebPage/mvc/image/products/comida_hamster.png" alt="image"> 
+                                                                </label>
+                                                            </div>
+                                                            <div class="thumbnail">
+                                                                <label for="fade-gallery02"> 
+                                                                    <img src="http://localhost/WebPage/mvc/image/products/comida_hamster_2.png" alt="image"> 
+                                                                </label>
+                                                            </div>
+                                                            <div class="thumbnail">
+                                                                <label for="fade-gallery03"> 
+                                                                    <img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png" alt="image"> 
+                                                                </label>
+                                                            </div>
+                                                            <div class="thumbnail">
+                                                                <label for="fade-gallery04"> 
+                                                                    <img src="http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm_2.png" alt="image"> 
+                                                                </label>
+                                                            </div>
+                                                            <label for="open-switch" class="switch-label"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="box-edit">
+                                                       <h1 data-editor="edit" class="ItemName">Alimento para Hámster Redkite</h1>
                                                    </div>
-                                               </div>
-                                               <div class="container-section-social-single">
-                                                <label>A 943 personas les gusta esto</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                     <div class="container-profile-social-page">
-                                        <div class="section-text-social-single">
-                                           <p>
-                                              Excelente servicio a domicilio y amabilidad tienen mucha variedad de peceras a costos muy accesibles ... Mora está súper feliz Gracias
-                                          </p>
-                                      </div>
-                                      <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
-                                          <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
-                                             <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
-                                         </div>
-                                         <div style="padding-left: 20px;">
-                                             <a href="#">2 min</a>
+                                                   <div class="col-d">
+                                                    <div class="box-edit main-info" data-editor="editMCE">
+                                                        <h2>Descripción del Producto</h2>
+                                                        <div class="ShortDescription">
+                                                            <p>
+                                                                El Alimento para Hámster de Redkite provee a su mascota todos los nutrientes eseciales para un desarrollo y mantenimiento óptimo.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="prise-wrap">
+                                                        <div class="box-edit">
+                                                            <strong class="item-prise" data-editor="edit,dell" contenteditable="false"><span class="PriceInfo">MXN 75.00</span></strong>
+                                                        </div>
+                                                        <div class="box-edit">
+                                                            <span class="paragraph" data-editor="edit,dell">sample VAT.</span>
+                                                        </div>
+                                                        <div class="box-edit paragraph-green" data-editor="editMCE,dell">
+                                                         <span class="paragraph green"><i class="fa fa-check" aria-hidden="true"></i><span>Immediately available</span></span>
+                                                     </div>
+                                                 </div>
+                                             </div>
                                          </div>
                                      </div>
                                  </div>
-                             </div>
-                             <div class="item">
-                               <div class="container-profile-social-page">
-                                  <div class="section-text-social-single">
-                                     <p>
-                                        Me encanto tienen productos de excelente calidad y precio , su servicio a domicilio y comunicación con el cliente es excelente y rápido muchísimas gracias ! 🤩
-                                    </p>
+                                 <div>
+                                    <div>
+                                        <h2>Reseñas del Producto</h2>
+                                    </div>
+                                    <div>
+                                        <div class="owl-carousel owl-theme" id="carousel-social-reviews-single">
+                                            <div class="item ">
+                                                <div class="row container-profile-social-page">
+                                                    <div class="image-profile-social-page">
+                                                        <img class="img-profile-social-single" src="https://scontent.fgdl5-2.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/73196204_2526055317490246_8914104120613273600_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=THHVEn4bIRgAX9up4Ll&_nc_ht=scontent.fgdl5-2.fna&oh=4778a56fae6fcf4ab6e15cdd793d88ba&oe=5F326FDB">
+                                                    </div>
+                                                    <div class="container-section-social-single">
+                                                        <label>Black White Bettas</label>
+                                                    </div>
+                                                    <div class="container-section-social-single" style="width: 100%;display: flex;align-content: center;">
+                                                        <div class="contenedorStars1M" style="width: 108px;position: relative;">
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <i class="far fa-star"></i>
+                                                            <div class="contenedorStarsM" style="width: 100%;position: absolute;top: 0px;left: 0;white-space: nowrap;color: #ffd200;overflow: hidden;">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="container-section-social-single">
+                                                        <label>A 943 personas les gusta esto</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="container-profile-social-page">
+                                                    <div class="section-text-social-single">
+                                                        <p>
+                                                            Excelente servicio a domicilio y amabilidad tienen mucha variedad de peceras a costos muy accesibles ... Mora está súper feliz Gracias
+                                                        </p>
+                                                    </div>
+                                                    <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
+                                                        <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
+                                                            <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
+                                                        </div>
+                                                        <div style="padding-left: 20px;">
+                                                            <a href="#">2 min</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="container-profile-social-page">
+                                                    <div class="section-text-social-single">
+                                                        <p>
+                                                            Me encanto tienen productos de excelente calidad y precio , su servicio a domicilio y comunicación con el cliente es excelente y rápido muchísimas gracias ! 🤩
+                                                        </p>
+                                                    </div>
+                                                    <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
+                                                        <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
+                                                            <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
+                                                        </div>
+                                                        <div style="padding-left: 20px;">
+                                                            <a href="#">1h</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="container-profile-social-page">
+                                                    <div class="section-text-social-single">
+                                                        <p>
+                                                            excelente servicio y amabilidad sobre todo muy recomendable y lo más importante de todo productos de calidad.
+                                                        </p>
+                                                    </div>
+                                                    <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
+                                                        <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
+                                                            <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
+                                                        </div>
+                                                        <div style="padding-left: 20px;">
+                                                            <a href="#">3 d</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="container-profile-social-page">
+                                                    <div class="section-text-social-single">
+                                                        <p>
+                                                            Excelente servicio! Peceras de muy buena calidad y rapidez en el envío ☺️
+                                                        </p>
+                                                    </div>
+                                                    <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
+                                                        <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
+                                                            <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
+                                                        </div>
+                                                        <div style="padding-left: 20px;">
+                                                            <a href="#">2020/04/24</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
-                                    <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
-                                       <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
-                                   </div>
-                                   <div style="padding-left: 20px;">
-                                       <a href="#">1h</a>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="item">
-                         <div class="container-profile-social-page">
-                            <div class="section-text-social-single">
-                               <p>
-                                  excelente servicio y amabilidad sobre todo muy recomendable y lo más importante de todo productos de calidad.
-                              </p>
-                          </div>
-                          <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
-                              <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
-                                 <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
-                             </div>
-                             <div style="padding-left: 20px;">
-                                 <a href="#">3 d</a>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="item">
-                   <div class="container-profile-social-page">
-                      <div class="section-text-social-single">
-                         <p>
-                            Excelente servicio! Peceras de muy buena calidad y rapidez en el envío ☺️
-                        </p>
+                            </div>
+                        </main>
                     </div>
-                    <div class="section-time-social-single" style="display: flex;padding: 8.5px;justify-content: center;">
-                        <div style="border-radius: 100%;color: white;background: #4267b2;width: 29px;text-align: center;padding: 6px;">
-                           <i class="fab fa-facebook-f" style="font-size: 18px;border-radius: 100%;"></i>
-                       </div>
-                       <div style="padding-left: 20px;">
-                           <a href="#">2020/04/24</a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
+                </td>
+            </tr>
+            <script type="text/javascript" src="<?php echo RUTA_URL;?>/js/reviews/social/social-reviews-single.js"></script>
+        </tbody>
+    </table>
+    <span id="closeHtml"></span>	
+    <?php 
 
 
-   </div>
-</div>
-</div>
-
-</main>
-<!--<footer id="footer" class="wrapper">
-   <div class="container">
-       <div class="footer-top">
-           <div class="box">
-               <strong class="logo">
-                   <a target="_blank" href="#" data-editor="img,dell">
-                      <img src="https://template.threendy.com/template1/template/images/logo-bottom.png" alt="image">
-                  </a>
-              </strong>
-              <div id="threendy_copyright" data-editor="edit,dell">
-                  <a href="https://stores.ebay.de/threendy" rel="nofollow" title="Mobile custom eBay Shop and eBay listing Template Design by Threendy" target="_blank">eBay Shop eBay listing auction template by Threendy</a>
-              </div>
-              <span class="copy" data-editor="edit,dell">2017 � Copyright reserved</span>
-          </div>
-          <div class="box-hold">
-              <div class="box" data-editor="editMCE,dell">
-                  <h3>Information</h3>
-                  <ul data-links="true">
-                      <li><a target="_blank" href="#">About us</a></li>
-                      <li><a target="_blank" href="#">Data protection</a></li>
-                      <li><a target="_blank" href="#">Terms Conditions</a></li>
-                      <li><a target="_blank" href="#">Payment Shipping</a></li>
-                      <li><a target="_blank" href="#">Battery disposal</a></li>
-                  </ul>
-              </div>
-              <div class="box" data-editor="editMCE,dell">
-               <h3>Categories</h3>
-               <ul data-links="true">
-                   <li><a target="_blank" href="#">Women</a></li>
-                   <li><a target="_blank" href="#">Men</a></li>
-                   <li><a target="_blank" href="#">Children</a></li>
-                   <li><a target="_blank" href="#">Brands</a></li>
-                   <li><a target="_blank" href="#">Sale</a></li>
-               </ul>
-           </div>
-       </div>
-   </div>
-</div>
-</footer>-->
-</div>
-</td>
-</tr>
-<script type="text/javascript" src="<?php echo RUTA_URL;?>/js/reviews/social/social-reviews-single.js"></script>
-</tbody>
-</table>
-<span id="closeHtml"></span>	
-<?php 
-
-
-include "../app/vistas/includes/footer.php";
-?>
+    include "../app/vistas/includes/footer.php";
+    ?>
 </body>
 </html>
 <style type="text/css">
-#carousel-social-reviews-single{
-   margin-bottom: 15px;
-}
-#carousel-social-reviews-single .container-profile-social-page:hover{
-   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
-}
-#carousel-social-reviews-single .container-profile-social-page{
-   border: 2px solid #cecece;
-   background: white;
-   margin: 10px;
-   padding: 10px;
-   max-width: 300px;
-}
-#carousel-social-reviews-single .image-profile-social-page{
-   justify-content: center;
-   text-align: center;
-   width: 100%;
-}
-#carousel-social-reviews-single .img-profile-social-single{
-   display: inline;
-   width: 50px;
-   height: 50px;
-}
-#carousel-social-reviews-single .container-section-social-single{
-   justify-content: center;
-   text-align: center;
-   width: 100%;
-}
-#carousel-social-reviews-single .section-text-social-single{
-   height: 91px;
-   overflow: auto;
-}
+    #carousel-social-reviews-single{
+     margin-bottom: 15px;
+    }
+    #carousel-social-reviews-single .container-profile-social-page:hover{
+     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.3);
+    }
+    #carousel-social-reviews-single .container-profile-social-page{
+     border: 2px solid #cecece;
+     background: white;
+     margin: 10px;
+     padding: 10px;
+     max-width: 300px;
+    }
+    #carousel-social-reviews-single .image-profile-social-page{
+     justify-content: center;
+     text-align: center;
+     width: 100%;
+    }
+    #carousel-social-reviews-single .img-profile-social-single{
+     display: inline;
+     width: 50px;
+     height: 50px;
+    }
+    #carousel-social-reviews-single .container-section-social-single{
+     justify-content: center;
+     text-align: center;
+     width: 100%;
+    }
+    #carousel-social-reviews-single .section-text-social-single{
+     height: 91px;
+     overflow: auto;
+    }
 </style>
 <style type="text/css">
 
-@media all{
-   .main-info{
+    @media all{
+     .main-info{
       margin: 48px 0px 0 0px;
-  }
-  .wrapper{
+    }
+    .wrapper{
       font:14px/28px 'Montserrat', sans-serif;
       margin:0;
       min-width:320px;
       color:#000;
-  }
-  .wrapper strong{
+    }
+    .wrapper strong{
       font-weight:600;
-  }
-  .wrapper input{
+    }
+    .wrapper input{
       vertical-align:middle;
       -webkit-border-radius:0;
       -moz-border-radius:0;
@@ -328,21 +282,21 @@ include "../app/vistas/includes/footer.php";
       -moz-box-shadow:inset rgba(0, 0, 0, 0) 0 0 0;
       box-shadow:inset rgba(0, 0, 0, 0) 0 0 0;
       -webkit-appearance:none;
-  }
-  .wrapper input::-moz-focus-inner{
+    }
+    .wrapper input::-moz-focus-inner{
       padding:0;
       border:0;
-  }
-  .wrapper label{
+    }
+    .wrapper label{
       cursor:pointer;
-  }
-  .wrapper figure,.wrapper nav{
+    }
+    .wrapper figure,.wrapper nav{
       display:block;
-  }
-  .wrapper figure{
+    }
+    .wrapper figure{
       margin:0;
-  }
-  .wrapper img{
+    }
+    .wrapper img{
       border:0;
       border-style:none;
       vertical-align:top;
@@ -356,51 +310,51 @@ include "../app/vistas/includes/footer.php";
       outline:0;
       padding:0;
       margin:0;
-  }
-  .wrapper a,.wrapper a:link,.wrapper a:visited{
+    }
+    .wrapper a,.wrapper a:link,.wrapper a:visited{
       color:#000;
       text-decoration:none;
-  }
-  .wrapper a:focus,.wrapper a:hover{
+    }
+    .wrapper a:focus,.wrapper a:hover{
       outline:none;
       outline:0;
-  }
-  .container{
+    }
+    .container{
       max-width:1270px;
       margin:0 auto;
       padding:0 20px;
-  }
-  .wrapper p{
+    }
+    .wrapper p{
       margin:0 0 12px;
-  }
-  .wrapper h2{
+    }
+    .wrapper h2{
       font-size:32px;
       line-height:52px;
       margin:0 0 88px;
       font-weight:700;
       text-align:center;
       text-transform:uppercase;
-  }
-  .wrapper h2 span{
+    }
+    .wrapper h2 span{
       color:#de183c;
-  }
-  .wrapper h3{
+    }
+    .wrapper h3{
       font-size:20px;
       line-height:26px;
       font-weight:600;
       margin:0 0 30px;
       text-transform:uppercase;
-  }
-  #header{
+    }
+    #header{
       padding:25px 0 0;
       margin:0 0 50px;
-  }
-  .header-top{
+    }
+    .header-top{
       width:100%;
       overflow:hidden;
       margin:0 0 19px;
-  }
-  #header .logo{
+    }
+    #header .logo{
       float:left;
       width:156px;
       margin:0 10px 10px 0;
@@ -409,47 +363,47 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:opacity .2s ease-in-out;
       -o-transition:opacity .2s ease-in-out;
       transition:opacity .2s ease-in-out;
-  }
-  .logo:hover{
+    }
+    .logo:hover{
       opacity:0.7;
-  }
-  .logo img{
+    }
+    .logo img{
       display:block;
       width:100%;
       height:auto;
-  }
-  #header .contact-phone{
+    }
+    #header .contact-phone{
       float:right;
       font-size:18px;
       line-height:28px;
       font-weight:600;
       padding:25px 0 0;
       margin:0 0 10px 10px;
-  }
-  #header .contact-phone span{
+    }
+    #header .contact-phone span{
       color:#de183c;
-  }
-  #header .contact-phone .fa{
+    }
+    #header .contact-phone .fa{
       margin:0 6px 0 0;
       color:#de183c;
       position:relative;
       top:0;
-  }
-  #nav{
+    }
+    #nav{
       width:100%;
       z-index:10;
       position:relative;
       background:#f5f5f5;
-  }
-  #nav:after{
+    }
+    #nav:after{
       content:"";
       display:block;
       clear:both;
-  }
-  .open-check{
+    }
+    .open-check{
       display:none;
-  }
-  #topnav{
+    }
+    #topnav{
       list-style:none;
       margin:0;
       padding:0;
@@ -457,22 +411,22 @@ include "../app/vistas/includes/footer.php";
       font-size:0px;
       line-height:0px;
       position:relative;
-  }
-  #topnav:after{
+    }
+    #topnav:after{
       content:"";
       display:block;
       clear:both;
-  }
-  #topnav > li{
+    }
+    #topnav > li{
       display:inline-block;
       vertical-align:top;
       font-size:16px;
       line-height:18px;
-  }
-  #topnav > li:last-child{
+    }
+    #topnav > li:last-child{
       border:none;
-  }
-  #topnav > li >  a{
+    }
+    #topnav > li >  a{
       padding:24px 29px;
       font-weight:400;
       display:block;
@@ -484,11 +438,11 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:background .2s ease-in-out;
       -o-transition:background .2s ease-in-out;
       transition:background .2s ease-in-out;
-  }
-  #topnav > li:hover > a{
+    }
+    #topnav > li:hover > a{
       background:rgba(255,255,255,0.3);
-  }
-  #topnav > li > .open-check + a:before{
+    }
+    #topnav > li > .open-check + a:before{
       content:'';
       position:absolute;
       top:50%;
@@ -499,16 +453,16 @@ include "../app/vistas/includes/footer.php";
       border-style:solid;
       border-width:4px 4px 0 4px;
       border-color:#000 transparent transparent transparent;
-  }
-  .children-holder{
+    }
+    .children-holder{
       position:absolute;
       top:100%;
       left:0;
       z-index:100;
       overflow:hidden;
       width:100%;
-  }
-  .children{
+    }
+    .children{
       text-align:left;
       background:#de183c;
       width:100%;
@@ -525,11 +479,11 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:margin .5s ease-in-out;
       -o-transition:margin .5s ease-in-out;
       transition:margin .5s ease-in-out;
-  }
-  #topnav > li:hover .children{
+    }
+    #topnav > li:hover .children{
       margin:0;
-  }
-  .children > li{
+    }
+    .children > li{
       margin:0 0 20px;
       display:inline-block;
       vertical-align:top;
@@ -538,25 +492,25 @@ include "../app/vistas/includes/footer.php";
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       position:relative;
-  }
-  .children > li.children-img{
+    }
+    .children > li.children-img{
       text-align:right;
-  }
-  .children > li.children-img img{
+    }
+    .children > li.children-img img{
       width:250px;
       height:auto;
-  }
-  .children2{
+    }
+    .children2{
       list-style:none;
       padding:20px 0 0;
       margin:0;
-  }
-  .children2 li{
+    }
+    .children2 li{
       position:relative;
       margin:0 0 10px;
       padding:0 0 0 15px;
-  }
-  .children2 > li:before{
+    }
+    .children2 > li:before{
       content:'';
       position:absolute;
       top:50%;
@@ -565,19 +519,19 @@ include "../app/vistas/includes/footer.php";
       height:4px;
       width:4px;
       background:#fff;
-  }
-  .children > li > a,.children2 > li > a{
+    }
+    .children > li > a,.children2 > li > a{
       text-decoration:none;
       position:relative;
       font-size:16px;
       line-height:18px;
       color:#fff!important;
-  }
-  .children2 > li > a{
+    }
+    .children2 > li > a{
       font-size:13px;
       line-height:15px;
-  }
-  .children > li > a:before,.children2 > li > a:before{
+    }
+    .children > li > a:before,.children2 > li > a:before{
       content:'';
       position:absolute;
       bottom:0;
@@ -595,22 +549,22 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:transform .2s ease-in-out;
       -o-transition:transform .2s ease-in-out;
       transition:transform .2s ease-in-out;
-  }
-  .children > li > a:hover:before,.children2 > li > a:hover:before{
+    }
+    .children > li > a:hover:before,.children2 > li > a:hover:before{
       -webkit-transform:scale(1);
       -moz-transform:scale(1);
       -ms-transform:scale(1);
       -o-transform:scale(1);
       transform:scale(1);
-  }
-  #topnav > li > label,.children > li > label{
+    }
+    #topnav > li > label,.children > li > label{
       display:none;
-  }
-  .hold-toogle{
+    }
+    .hold-toogle{
       float:right;
       display:none;
-  }
-  .toogle-menu{
+    }
+    .toogle-menu{
       z-index:61;
       height:17px;
       position:relative;
@@ -619,54 +573,54 @@ include "../app/vistas/includes/footer.php";
       padding:0 35px 0 0;
       color:#000;
       line-height:17px;
-  }
-  .toogle-menu > span{
+    }
+    .toogle-menu > span{
       position:absolute;
       right:0;
       height:3px;
       width:30px;
       background:#000;
-  }
-  .toogle-menu .t{
+    }
+    .toogle-menu .t{
       top:0;
-  }
-  .toogle-menu .c{
+    }
+    .toogle-menu .c{
       top:7px;
-  }
-  .toogle-menu .b{
+    }
+    .toogle-menu .b{
       top:14px;
-  }
-  .close-menu{
+    }
+    .close-menu{
       display:none;
-  }
-  #topnav > li > .open-check ~ .children-holder .children > li:nth-child(1),#topnav > li > .open-check ~ .children-holder .children > li:nth-child(2),.children > li > .open-check ~ .children2 > li:nth-child(1),.children > li > .open-check ~ .children2 > li:nth-child(2){
+    }
+    #topnav > li > .open-check ~ .children-holder .children > li:nth-child(1),#topnav > li > .open-check ~ .children-holder .children > li:nth-child(2),.children > li > .open-check ~ .children2 > li:nth-child(1),.children > li > .open-check ~ .children2 > li:nth-child(2){
       display:none;
-  }
-  .overlay{
+    }
+    .overlay{
       display:none;
-  }
-  .support-list{
+    }
+    .support-list{
       list-style:none;
       padding:0;
       margin:28px 0 0;
       text-align:center;
-  }
-  .support-list li{
+    }
+    .support-list li{
       display:inline-block;
       vertical-align:top;
       margin:0 49px 10px;
-  }
-  .support-list li .fa{
+    }
+    .support-list li .fa{
       display:inline-block;
       vertical-align:top;
       margin:4px 7px 0 0;
       color:#de183c;
       font-size:18px;
-  }
-  #main{
+    }
+    #main{
       overflow:hidden;
-  }
-  .product-box{
+    }
+    .product-box{
       margin:0 0 113px;
       position:relative;
       overflow:hidden;
@@ -676,32 +630,32 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:padding .2s ease-in-out;
       -o-transition:padding .2s ease-in-out;
       transition:padding .2s ease-in-out;
-  }
-  .product-images{
+    }
+    .product-images{
       float:left;
       width:62%;
-  }
-  .product-description{
+    }
+    .product-description{
       width:38%;
       float:left;
       padding:0 20px 0 0;
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
-  }
-  .product-description h1{
+    }
+    .product-description h1{
       margin:0 0 1px;
       font:42px/49px 'Montserrat', sans-serif;
       font-weight:700;
-  }
-  .item-artikle{
+    }
+    .item-artikle{
       display:block;
       color:#808080;
       font-size:12px;
       line-height:14px;
       margin:0 0 48px 8px;
-  }
-  .wrapper .product-description h2{
+    }
+    .wrapper .product-description h2{
       margin:0 0 30px 5px;
       text-align:left;
       color:#71ceb8;
@@ -709,51 +663,51 @@ include "../app/vistas/includes/footer.php";
       line-height:26px;
       font-weight:600;
       text-transform:uppercase;
-  }
-  .product-description h3{
+    }
+    .product-description h3{
       font-size:14px;
       line-height:16px;
       margin:0 0 11px 9px;
       text-align:left;
-  }
-  .prise-wrap{
+    }
+    .prise-wrap{
       margin:0 0 40px 6px;
-  }
-  .item-prise{
+    }
+    .item-prise{
       font:40px/50px 'Montserrat', sans-serif;
       display:block;
       margin:0 0 9px;
-  }
-  .paragraph{
+    }
+    .paragraph{
       display:block;
       margin:0 0 10px 7px;
       font-size:10px;
       line-height:12px;
       color:#808080;
-  }
-  .paragraph.green{
+    }
+    .paragraph.green{
       color:#0c8416;
-  }
-  .paragraph .fa{
+    }
+    .paragraph .fa{
       margin:0 5px 0 0;
-  }
-  .product-description ul,.info-list{
+    }
+    .product-description ul,.info-list{
       margin:0 0 51px 6px;
       padding:0;
       list-style:none;
-  }
-  .info-list{
+    }
+    .info-list{
       margin:0 0 15px;
-  }
-  .product-description ul li,.info-list > li{
+    }
+    .product-description ul li,.info-list > li{
       position:relative;
       margin:0 0 14px;
       padding:0 0 0 30px;
       font-size:14px;
       line-height:18px;
       color:#808080;
-  }
-  .product-description ul li:before,.info-list li:before{
+    }
+    .product-description ul li:before,.info-list li:before{
       content:"\f00c";
       font-family:FontAwesome;
       font-size:inherit;
@@ -762,17 +716,17 @@ include "../app/vistas/includes/footer.php";
       top:0;
       left:0px;
       color:#de183c;
-  }
-  .info-list ul{
+    }
+    .info-list ul{
       list-style:none;
       padding:15px 0 0 15px;
-  }
-  .info-list ul li{
+    }
+    .info-list ul li{
       padding:0 0 0 15px;
       margin:0 0 10px;
       position:relative;
-  }
-  .info-list ul li:before{
+    }
+    .info-list ul li:before{
       content:'';
       width:4px;
       height:4px;
@@ -783,23 +737,23 @@ include "../app/vistas/includes/footer.php";
       left:0;
       top:6px;
       background:#de183c;
-  }
-  .product-description .size-list{
+    }
+    .product-description .size-list{
       width:100%;
       overflow:hidden;
       list-style:none;
       padding:0;
       margin:0 0 20px 9px;
-  }
-  .size-list li:before,.color-list li:before{
+    }
+    .size-list li:before,.color-list li:before{
       display:none;
-  }
-  .product-description .size-list li{
+    }
+    .product-description .size-list li{
       padding:0;
       float:left;
       margin:0 6px 10px 0;
-  }
-  .size-list .size-lable{
+    }
+    .size-list .size-lable{
       display:block;
       width:53px;
       height:37px;
@@ -817,12 +771,12 @@ include "../app/vistas/includes/footer.php";
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
-  }
-  .size-list .size-lable:hover{
+    }
+    .size-list .size-lable:hover{
       border-color:#ff1f41;
       color:#171717;
-  }
-  .sheet-link{
+    }
+    .sheet-link{
       display:inline-block;
       vertical-align:top;
       margin:22px 0 0 20px;
@@ -830,20 +784,20 @@ include "../app/vistas/includes/footer.php";
       line-height:14px;
       color:#de183c!important;
       text-decoration:underline!important;
-  }
-  .product-description .color-list{
+    }
+    .product-description .color-list{
       width:100%;
       overflow:hidden;
       list-style:none;
       padding:0;
       margin:0 0 20px 9px;
-  }
-  .product-description .color-list li{
+    }
+    .product-description .color-list li{
       padding:0;
       float:left;
       margin:0 12px 10px 0;
-  }
-  .color-list .color-link{
+    }
+    .color-list .color-link{
       display:block;
       position:relative;
       cursor:pointer;
@@ -858,11 +812,11 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:all .2s ease-in-out;
       -o-transition:all .2s ease-in-out;
       transition:all .2s ease-in-out;
-  }
-  .color-list .color-link:hover{
+    }
+    .color-list .color-link:hover{
       border-color:#ff103d;
-  }
-  .color-list .color-circle{
+    }
+    .color-list .color-circle{
       content:'';
       position:absolute;
       top:50%;
@@ -873,19 +827,19 @@ include "../app/vistas/includes/footer.php";
       -webkit-border-radius:50%;
       -moz-border-radius:50%;
       border-radius:50%;
-  }
-  .open-check{
+    }
+    .open-check{
       display:none;
-  }
-  .fade-gallery{
+    }
+    .fade-gallery{
       margin:0 0 20px;
       font-size:0px;
       line-height:0px;
-  }
-  .fade-gallery label{
+    }
+    .fade-gallery label{
       cursor:pointer;
-  }
-  .fade-gallery .switcher{
+    }
+    .fade-gallery .switcher{
       position:absolute;
       bottom:43px;
       left:0;
@@ -896,11 +850,11 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:height .2s ease-in-out;
       -o-transition:height .2s ease-in-out;
       transition:height .2s ease-in-out;
-  }
-  .open-switch{
+    }
+    .open-switch{
       display:none;
-  }
-  .switch-label{
+    }
+    .switch-label{
       outline:0 none;
       position:absolute;
       bottom:-15px;
@@ -912,25 +866,25 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:transform .2s ease-in-out;
       -o-transition:transform .2s ease-in-out;
       transition:transform .2s ease-in-out;
-  }
-  .switch-label .fa{
+    }
+    .switch-label .fa{
       font-size:50px;
       color:#ccc1af;
-  }
-  #open-switch:checked ~ .product-box{
+    }
+    #open-switch:checked ~ .product-box{
       padding-bottom:327px;
-  }
-  #open-switch:checked ~ .product-box .fade-gallery .switcher{
+    }
+    #open-switch:checked ~ .product-box .fade-gallery .switcher{
       height:240px;
-  }
-  #open-switch:checked ~ .product-box .switch-label{
+    }
+    #open-switch:checked ~ .product-box .switch-label{
       -webkit-transform:rotate(200grad);
       -moz-transform:rotate(200grad);
       -ms-transform:rotate(200grad);
       -o-transform:rotate(200grad);
       transform:rotate(200grad);
-  }
-  .thumbnail{
+    }
+    .thumbnail{
       display:inline-block;
       vertical-align:top;
       width:12.5%;
@@ -941,8 +895,8 @@ include "../app/vistas/includes/footer.php";
       box-sizing:border-box;
       text-align:center;
       position:relative;
-  }
-  .thumbnail label{
+    }
+    .thumbnail label{
       height:50px;
       width:50px;
       display:inline-block;
@@ -957,8 +911,8 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:opacity .2s ease-in-out;
       -o-transition:opacity .2s ease-in-out;
       transition:opacity .2s ease-in-out;
-  }
-  .thumbnail label:before{
+    }
+    .thumbnail label:before{
       content:'';
       position:absolute;
       top:0;
@@ -976,8 +930,8 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:all .2s ease-in-out;
       -o-transition:all .2s ease-in-out;
       transition:all .2s ease-in-out;
-  }
-  .thumbnail label img{
+    }
+    .thumbnail label img{
       max-width:100%;
       max-height:100%;
       position:relative;
@@ -987,15 +941,15 @@ include "../app/vistas/includes/footer.php";
       -ms-transform:translateY(-50%);
       -o-transform:translateY(-50%);
       transform:translateY(-50%);
-  }
-  .fade-gallery .holder-img{
+    }
+    .fade-gallery .holder-img{
       width:100%;
       z-index:1;
       position:relative;
       height:715px;
       text-align:center;
-  }
-  .fade-gallery .holder-img img{
+    }
+    .fade-gallery .holder-img img{
       max-width:100%;
       max-height:100%;
       position:absolute;
@@ -1011,24 +965,24 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:transform .2s ease-in-out;
       -o-transition:transform .2s ease-in-out;
       transition:transform .2s ease-in-out;
-  }
-  .fade-gallery > .open-check:nth-of-type(1):checked ~ .holder-img img:nth-of-type(1),.fade-gallery > .open-check:nth-of-type(2):checked ~ .holder-img img:nth-of-type(2),.fade-gallery > .open-check:nth-of-type(3):checked ~ .holder-img img:nth-of-type(3),.fade-gallery > .open-check:nth-of-type(4):checked ~ .holder-img img:nth-of-type(4),.fade-gallery > .open-check:nth-of-type(5):checked ~ .holder-img img:nth-of-type(5),.fade-gallery > .open-check:nth-of-type(6):checked ~ .holder-img img:nth-of-type(6),.fade-gallery > .open-check:nth-of-type(7):checked ~ .holder-img img:nth-of-type(7),.fade-gallery > .open-check:nth-of-type(8):checked ~ .holder-img img:nth-of-type(8),.fade-gallery > .open-check:nth-of-type(9):checked ~ .holder-img img:nth-of-type(9),.fade-gallery > .open-check:nth-of-type(10):checked ~ .holder-img img:nth-of-type(10),.fade-gallery > .open-check:nth-of-type(11):checked ~ .holder-img img:nth-of-type(11),.fade-gallery > .open-check:nth-of-type(12):checked ~ .holder-img img:nth-of-type(12),.fade-gallery > .open-check:nth-of-type(13):checked ~ .holder-img img:nth-of-type(13),.fade-gallery > .open-check:nth-of-type(14):checked ~ .holder-img img:nth-of-type(14),.fade-gallery > .open-check:nth-of-type(15):checked ~ .holder-img img:nth-of-type(15),.fade-gallery > .open-check:nth-of-type(16):checked ~ .holder-img img:nth-of-type(16){
+    }
+    .fade-gallery > .open-check:nth-of-type(1):checked ~ .holder-img img:nth-of-type(1),.fade-gallery > .open-check:nth-of-type(2):checked ~ .holder-img img:nth-of-type(2),.fade-gallery > .open-check:nth-of-type(3):checked ~ .holder-img img:nth-of-type(3),.fade-gallery > .open-check:nth-of-type(4):checked ~ .holder-img img:nth-of-type(4),.fade-gallery > .open-check:nth-of-type(5):checked ~ .holder-img img:nth-of-type(5),.fade-gallery > .open-check:nth-of-type(6):checked ~ .holder-img img:nth-of-type(6),.fade-gallery > .open-check:nth-of-type(7):checked ~ .holder-img img:nth-of-type(7),.fade-gallery > .open-check:nth-of-type(8):checked ~ .holder-img img:nth-of-type(8),.fade-gallery > .open-check:nth-of-type(9):checked ~ .holder-img img:nth-of-type(9),.fade-gallery > .open-check:nth-of-type(10):checked ~ .holder-img img:nth-of-type(10),.fade-gallery > .open-check:nth-of-type(11):checked ~ .holder-img img:nth-of-type(11),.fade-gallery > .open-check:nth-of-type(12):checked ~ .holder-img img:nth-of-type(12),.fade-gallery > .open-check:nth-of-type(13):checked ~ .holder-img img:nth-of-type(13),.fade-gallery > .open-check:nth-of-type(14):checked ~ .holder-img img:nth-of-type(14),.fade-gallery > .open-check:nth-of-type(15):checked ~ .holder-img img:nth-of-type(15),.fade-gallery > .open-check:nth-of-type(16):checked ~ .holder-img img:nth-of-type(16){
       position:relative;
       left:auto;
-  }
-  .thumbnail:hover label,.fade-gallery > .open-check:nth-of-type(1):checked ~ .switcher .thumbnail:nth-of-type(1) label,.fade-gallery > .open-check:nth-of-type(2):checked ~ .switcher .thumbnail:nth-of-type(2) label,.fade-gallery > .open-check:nth-of-type(3):checked ~ .switcher .thumbnail:nth-of-type(3) label,.fade-gallery > .open-check:nth-of-type(4):checked ~ .switcher .thumbnail:nth-of-type(4) label,.fade-gallery > .open-check:nth-of-type(5):checked ~ .switcher .thumbnail:nth-of-type(5) label,.fade-gallery > .open-check:nth-of-type(6):checked ~ .switcher .thumbnail:nth-of-type(6) label,.fade-gallery > .open-check:nth-of-type(7):checked ~ .switcher .thumbnail:nth-of-type(7) label,.fade-gallery > .open-check:nth-of-type(8):checked ~ .switcher .thumbnail:nth-of-type(8) label,.fade-gallery > .open-check:nth-of-type(9):checked ~ .switcher .thumbnail:nth-of-type(9) label,.fade-gallery > .open-check:nth-of-type(10):checked ~ .switcher .thumbnail:nth-of-type(10) label,.fade-gallery > .open-check:nth-of-type(11):checked ~ .switcher .thumbnail:nth-of-type(11) label,.fade-gallery > .open-check:nth-of-type(12):checked ~ .switcher .thumbnail:nth-of-type(12) label,.fade-gallery > .open-check:nth-of-type(13):checked ~ .switcher .thumbnail:nth-of-type(13) label,.fade-gallery > .open-check:nth-of-type(14):checked ~ .switcher .thumbnail:nth-of-type(14) label,.fade-gallery > .open-check:nth-of-type(15):checked ~ .switcher .thumbnail:nth-of-type(15) label,.fade-gallery > .open-check:nth-of-type(16):checked ~ .switcher .thumbnail:nth-of-type(16) label{
+    }
+    .thumbnail:hover label,.fade-gallery > .open-check:nth-of-type(1):checked ~ .switcher .thumbnail:nth-of-type(1) label,.fade-gallery > .open-check:nth-of-type(2):checked ~ .switcher .thumbnail:nth-of-type(2) label,.fade-gallery > .open-check:nth-of-type(3):checked ~ .switcher .thumbnail:nth-of-type(3) label,.fade-gallery > .open-check:nth-of-type(4):checked ~ .switcher .thumbnail:nth-of-type(4) label,.fade-gallery > .open-check:nth-of-type(5):checked ~ .switcher .thumbnail:nth-of-type(5) label,.fade-gallery > .open-check:nth-of-type(6):checked ~ .switcher .thumbnail:nth-of-type(6) label,.fade-gallery > .open-check:nth-of-type(7):checked ~ .switcher .thumbnail:nth-of-type(7) label,.fade-gallery > .open-check:nth-of-type(8):checked ~ .switcher .thumbnail:nth-of-type(8) label,.fade-gallery > .open-check:nth-of-type(9):checked ~ .switcher .thumbnail:nth-of-type(9) label,.fade-gallery > .open-check:nth-of-type(10):checked ~ .switcher .thumbnail:nth-of-type(10) label,.fade-gallery > .open-check:nth-of-type(11):checked ~ .switcher .thumbnail:nth-of-type(11) label,.fade-gallery > .open-check:nth-of-type(12):checked ~ .switcher .thumbnail:nth-of-type(12) label,.fade-gallery > .open-check:nth-of-type(13):checked ~ .switcher .thumbnail:nth-of-type(13) label,.fade-gallery > .open-check:nth-of-type(14):checked ~ .switcher .thumbnail:nth-of-type(14) label,.fade-gallery > .open-check:nth-of-type(15):checked ~ .switcher .thumbnail:nth-of-type(15) label,.fade-gallery > .open-check:nth-of-type(16):checked ~ .switcher .thumbnail:nth-of-type(16) label{
       opacity:1;
-  }
+    }
 
-  .fade-gallery label[for="modal"]{
+    .fade-gallery label[for="modal"]{
       position:absolute;
       top:0px;
       left:0px;
       width:100%;
       height:100%;
       z-index:2;
-  }
-  .fade-gallery label[for="modal"] > span:first-child{
+    }
+    .fade-gallery label[for="modal"] > span:first-child{
       position:absolute;
       top:50%;
       left:50%;
@@ -1046,11 +1000,11 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:opacity .2s ease-in-out;
       -o-transition:opacity .2s ease-in-out;
       transition:opacity .2s ease-in-out;
-  }
-  .fade-gallery label[for="modal"]:hover > span:first-child{
+    }
+    .fade-gallery label[for="modal"]:hover > span:first-child{
       opacity:1;
-  }
-  .product-description{
+    }
+    .product-description{
       -ms-transform:scale(1);
       -webkit-transform:scale(1);
       transform:scale(1);
@@ -1059,15 +1013,15 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:transform .3s ease-in-out;
       -o-transition:transform .3s ease-in-out;
       transition:transform .3s ease-in-out;
-  }
-  .product-images{
+    }
+    .product-images{
       -webkit-transition:width .2s ease-in-out;
       -moz-transition:width .2s ease-in-out;
       -ms-transition:width .2s ease-in-out;
       -o-transition:width .2s ease-in-out;
       transition:width .2s ease-in-out;
-  }
-  .fade-gallery .close{
+    }
+    .fade-gallery .close{
       position:absolute;
       display:none;
       top:0px;
@@ -1090,31 +1044,31 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:background .2s ease-in-out, color .2s ease-in-out;
       -o-transition:background .2s ease-in-out, color .2s ease-in-out;
       transition:background .2s ease-in-out, color .2s ease-in-out;
-  }
-  .fade-gallery .close .fa{
+    }
+    .fade-gallery .close .fa{
       font-size:20px;
-  }
-  .fade-gallery > .empty-marker{
+    }
+    .fade-gallery > .empty-marker{
       position:absolute;
       top:-99999px;
       left:-99999px;
-  }
+    }
 
-  #main .open-modal:checked ~ .product-box .product-images{
+    #main .open-modal:checked ~ .product-box .product-images{
       width:100%;
-  }
-  #main .open-modal:checked ~ .product-box .fade-gallery .holder-img{
+    }
+    #main .open-modal:checked ~ .product-box .fade-gallery .holder-img{
       height:75vh;
       margin:0;
       padding: 30px;
-  }
-  #main .open-modal:checked ~ .product-box .fade-gallery .close{
+    }
+    #main .open-modal:checked ~ .product-box .fade-gallery .close{
       display:block;
-  }
-  #main .open-modal:checked ~ .product-box .fade-gallery label[for="modal"] > span:first-child{
+    }
+    #main .open-modal:checked ~ .product-box .fade-gallery label[for="modal"] > span:first-child{
       display:none;
-  }
-  #main .open-modal:checked ~ .product-box .product-description{
+    }
+    #main .open-modal:checked ~ .product-box .product-description{
       position:absolute;
       top:0;
       right:0;
@@ -1123,30 +1077,30 @@ include "../app/vistas/includes/footer.php";
       -ms-transform:scale(0);
       -o-transform:scale(0);
       transform:scale(0);
-  }
-  .thumbnail:hover label{
+    }
+    .thumbnail:hover label{
       opacity:1;
-  }
-  .thumbnail:hover label:before{
+    }
+    .thumbnail:hover label:before{
       opacity:1;
-  }
-  .thumbnail:hover label{
+    }
+    .thumbnail:hover label{
       opacity:1;
-  }
-  .thumbnail:hover label:before{
+    }
+    .thumbnail:hover label:before{
       opacity:1;
-  }
-  #product-container .variant04 .fade-gallery .switcher{
+    }
+    #product-container .variant04 .fade-gallery .switcher{
       position:relative;
       bottom:auto;
       left:auto;
       height:110px;
       padding:0 0 30px;
-  }
-  #product-container .variant04 #open-switch:checked ~ .product-box .fade-gallery .switcher{
+    }
+    #product-container .variant04 #open-switch:checked ~ .product-box .fade-gallery .switcher{
       height:500px;
-  }
-  #product-container .variant04 .fade-gallery .switcher:before{
+    }
+    #product-container .variant04 .fade-gallery .switcher:before{
       content:'';
       position:absolute;
       bottom:0;
@@ -1155,56 +1109,56 @@ include "../app/vistas/includes/footer.php";
       height:30px;
       background:#fff;
       z-index:1;
-  }
-  #product-container .variant04 .fade-gallery .switcher .switch-label{
+    }
+    #product-container .variant04 .fade-gallery .switcher .switch-label{
       z-index:3;
-  }
-  #product-container .variant04 .thumbnail{
+    }
+    #product-container .variant04 .thumbnail{
       width:60px;
-  }
-  #product-container .variant04 .fade-gallery .holder-img{
+    }
+    #product-container .variant04 .fade-gallery .holder-img{
       height:400px;
       padding:30px;
-  }
-  #product-container .variant04 .product-box,#product-container .variant04 #open-switch:checked ~ .product-box{
+    }
+    #product-container .variant04 .product-box,#product-container .variant04 #open-switch:checked ~ .product-box{
       padding:10px;
       margin:0 0 30px;
-  }
-  #product-container .variant04 .product-description{
+    }
+    #product-container .variant04 .product-description{
       width:45%;
-  }
-  #product-container .variant04 .product-images{
+    }
+    #product-container .variant04 .product-images{
       width:55%;
-  }
-  .information-box{
+    }
+    .information-box{
       margin:0 0 100px;
       position:relative;
-  }
-  .information-variant01{
+    }
+    .information-variant01{
       background:#f5f5f5;
       padding:67px 0 17px;
-  }
-  .information-variant01 .hold-img{
+    }
+    .information-variant01 .hold-img{
       position:relative;
       margin:0 0 40px;
-  }
-  .information-variant01 .hold-img img{
+    }
+    .information-variant01 .hold-img img{
       display:block;
       width:100%;
       height:auto;
       position:relative;
-  }
-  .information-inner{
+    }
+    .information-inner{
       position:relative;
       z-index:1;
       margin:0 -61px;
-  }
-  .information-inner:after{
+    }
+    .information-inner:after{
       content:"";
       display:block;
       clear:both;
-  }
-  .information-variant01:before{
+    }
+    .information-variant01:before{
       content:'';
       position:absolute;
       top:0;
@@ -1212,8 +1166,8 @@ include "../app/vistas/includes/footer.php";
       width:1000px;
       height:100%;
       background:#f5f5f5;
-  }
-  .information-variant01:after{
+    }
+    .information-variant01:after{
       content:'';
       position:absolute;
       top:0;
@@ -1221,49 +1175,49 @@ include "../app/vistas/includes/footer.php";
       left:60%;
       width:2000px;
       background:#de183c;
-  }
-  .information-box .col{
+    }
+    .information-box .col{
       float:left;
       width:50%;
       padding:0 61px;
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
-  }
-  .information-box table{
+    }
+    .information-box table{
       width:100%;
       margin:0 0 30px;
       border-collapse:collapse;
-  }
-  .information-box table.table-variant01 td{
+    }
+    .information-box table.table-variant01 td{
       width:50%;
       border-bottom:1px solid #f1eee9;
       padding:1px 8px 2px 8px;
       color:#808080;
-  }
-  .information-box table.table-variant01 tr:last-child td{
+    }
+    .information-box table.table-variant01 tr:last-child td{
       border:none;
-  }
-  .information-box table.table-variant01 td:last-child{
+    }
+    .information-box table.table-variant01 td:last-child{
       color:#de183c;
-  }
-  .information-box table.table-variant02 td{
+    }
+    .information-box table.table-variant02 td{
       width:50%;
       border-top:1px solid #ddd;
       padding:5px 8px 2px 8px;
       color:#808080;
-  }
-  .information-box table.table-variant02 tr:nth-child(odd) td{
+    }
+    .information-box table.table-variant02 tr:nth-child(odd) td{
       background:#f5f5f5;
-  }
-  .advantages-list{
+    }
+    .advantages-list{
       list-style:none;
       padding:0;
       margin:10px -35px 0;
       font-size:0px;
       line-height:0px;
-  }
-  .advantages-list li{
+    }
+    .advantages-list li{
       font-size:15px;
       line-height:24px;
       color:#616161;
@@ -1276,27 +1230,27 @@ include "../app/vistas/includes/footer.php";
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       text-align:center;
-  }
-  .advantages-list li .title{
+    }
+    .advantages-list li .title{
       text-transform:uppercase;
       color:#000;
       display:block;
       margin:0 0 15px;
       font-weight:600;
-  }
-  .advantages-list li .hold-icon{
+    }
+    .advantages-list li .hold-icon{
       display:block;
       margin:0 0 23px;
-  }
-  .advantages-list li .hold-icon .fa{
+    }
+    .advantages-list li .hold-icon .fa{
       font-size:28px;
       color:#9e8769;
-  }
-  .payment-box{
+    }
+    .payment-box{
       margin:0 -61px 130px;
       overflow:hidden;
-  }
-  .payment-box .col{
+    }
+    .payment-box .col{
       width:50%;
       float:left;
       box-sizing:border-box;
@@ -1307,39 +1261,39 @@ include "../app/vistas/includes/footer.php";
       font-size:14px;
       line-height:24px;
       color:#616161;
-  }
-  .payment-box .col h3{
+    }
+    .payment-box .col h3{
       font-size:20px;
       line-height:26px;
       font-weight:600;
       color:#060606;
       text-transform:uppercase;
       margin:0 0 27px;
-  }
-  .icon-list{
+    }
+    .icon-list{
       list-style:none;
       padding:0;
       margin:0;
-  }
-  .icon-list li{
+    }
+    .icon-list li{
       display:inline-block;
       vertical-align:top;
       padding:0 39px 0 0;
-  }
-  .payment-box .col p{
+    }
+    .payment-box .col p{
       margin:0 0 26px;
-  }
-  .best-sellers{
+    }
+    .best-sellers{
       margin:0 0 110px;
-  }
-  .best-variant01{
+    }
+    .best-variant01{
       font-size:0px;
       line-height:0px;
       list-style:none;
       padding:0;
       margin:0 0 20px;
-  }
-  .best-variant01 li{
+    }
+    .best-variant01 li{
       font:18px/30px 'Montserrat Alternates', sans-serif;
       display:inline-block;
       vertical-align:top;
@@ -1350,8 +1304,8 @@ include "../app/vistas/includes/footer.php";
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       position:relative;
-  }
-  .best-variant01 li a{
+    }
+    .best-variant01 li a{
       display:block;
       min-height:440px;
       position:relative;
@@ -1360,18 +1314,18 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:opacity .2s ease-in-out;
       -o-transition:opacity .2s ease-in-out;
       transition:opacity .2s ease-in-out;
-  }
-  .best-variant01 li a:hover{
+    }
+    .best-variant01 li a:hover{
       opacity:0.9;
-  }
-  .best-variant01 li:nth-child(1) a,.best-variant01 li:nth-child(6) a{
+    }
+    .best-variant01 li:nth-child(1) a,.best-variant01 li:nth-child(6) a{
       color:#fff!important;
-  }
-  .best-variant01 li:nth-child(1),.best-variant01 li:nth-child(6){
+    }
+    .best-variant01 li:nth-child(1),.best-variant01 li:nth-child(6){
       background:#de183c;
       color:#fff;
-  }
-  .best-variant01 li:nth-child(1):before,.best-variant01 li:nth-child(6):before{
+    }
+    .best-variant01 li:nth-child(1):before,.best-variant01 li:nth-child(6):before{
       content:'';
       position:absolute;
       top:0;
@@ -1379,20 +1333,20 @@ include "../app/vistas/includes/footer.php";
       width:1000px;
       height:100%;
       background:#de183c;
-  }
-  .best-variant01 li:nth-child(6):before{
+    }
+    .best-variant01 li:nth-child(6):before{
       right:auto;
       left:100%;
-  }
-  .best-variant01 li:nth-child(4),.best-variant01 li:nth-child(5){
+    }
+    .best-variant01 li:nth-child(4),.best-variant01 li:nth-child(5){
       background:#f5f5f5;
-  }
-  .best-variant01 .hold-img{
+    }
+    .best-variant01 .hold-img{
       display:block;
       height:300px;
       margin:0 0 4px -20px;
-  }
-  .best-variant01 .hold-img img{
+    }
+    .best-variant01 .hold-img img{
       max-width:100%;
       max-height:100%;
       position:relative;
@@ -1402,8 +1356,8 @@ include "../app/vistas/includes/footer.php";
       -ms-transform:translateY(-50%);
       -o-transform:translateY(-50%);
       transform:translateY(-50%);
-  }
-  .best-variant01 .info-wrap{
+    }
+    .best-variant01 .info-wrap{
       position:absolute;
       bottom:0;
       left:0;
@@ -1412,32 +1366,32 @@ include "../app/vistas/includes/footer.php";
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
-  }
-  .best-variant01 .title{
+    }
+    .best-variant01 .title{
       font:18px/30px 'Montserrat Alternates', sans-serif;
       font-weight:400;
       display:block;
       overflow:hidden;
       margin:0 0 3px;
-  }
-  .best-variant01 .related-price{
+    }
+    .best-variant01 .related-price{
       font-size:24px;
       line-height:26px;
-  }
-  .open-check{
+    }
+    .open-check{
       display:none;
-  }
-  #categories-box{
+    }
+    #categories-box{
       margin:0 0 50px;
-  }
-  #categories-box h2{
+    }
+    #categories-box h2{
       margin:0 0 87px;
-  }
-  #categories-box .categories-wrap{
+    }
+    #categories-box .categories-wrap{
       overflow:hidden;
       margin:0 0 130px;
-  }
-  #categories-box .categories-item{
+    }
+    #categories-box .categories-item{
       float:left;
       width:33.33%;
       overflow:hidden;
@@ -1445,19 +1399,19 @@ include "../app/vistas/includes/footer.php";
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       padding:0 20px 0 0;
-  }
-  #categories-box .category-image,#categories-box ul{
+    }
+    #categories-box .category-image,#categories-box ul{
       float:left;
       width:50%;
-  }
-  #categories-box .category-image{
+    }
+    #categories-box .category-image{
       height:340px;
-  }
-  #categories-box .category-image a{
+    }
+    #categories-box .category-image a{
       position:relative;
       display:block;
-  }
-  #categories-box .category-image a:before{
+    }
+    #categories-box .category-image a:before{
       position:absolute;
       top:0;
       left:-10%;
@@ -1475,26 +1429,26 @@ include "../app/vistas/includes/footer.php";
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       z-index:2;
-  }
-  #categories-box .category-image a:hover:before{
+    }
+    #categories-box .category-image a:hover:before{
       -webkit-transform:scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
       transform:scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 135deg) translate3d(0, -100%, 0);
       opacity:1;
       visibility:visible;
-  }
-  .category-image img{
+    }
+    .category-image img{
       max-width:100%;
       max-height:100%;
-  }
-  #categories-box ul{
+    }
+    #categories-box ul{
       list-style:none;
       -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
       box-sizing:border-box;
       padding:12px 0 0 11px;
       margin:0;
-  }
-  #categories-box ul a{
+    }
+    #categories-box ul a{
       color:#616161;
       font-weight:500;
       -webkit-transition:color .2s ease-in-out;
@@ -1502,11 +1456,11 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:color .2s ease-in-out;
       -o-transition:color .2s ease-in-out;
       transition:color .2s ease-in-out;
-  }
-  #categories-box ul a:hover{
+    }
+    #categories-box ul a:hover{
       color:#000;
-  }
-  #footer{
+    }
+    #footer{
       font-size:14px;
       line-height:22px;
       background:#f5f5f5;
@@ -1514,8 +1468,8 @@ include "../app/vistas/includes/footer.php";
       padding:45px 0 0;
       position:relative;
       overflow:hidden;
-  }
-  #footer:before{
+    }
+    #footer:before{
       content:'';
       position:absolute;
       top:0;
@@ -1523,69 +1477,69 @@ include "../app/vistas/includes/footer.php";
       height:100%;
       width:1000px;
       background:#de183c;
-  }
-  .footer-top{
+    }
+    .footer-top{
       overflow:hidden;
       margin:0 -10px;
       position:relative;
-  }
-  #footer h3{
+    }
+    #footer h3{
       font-size:14px;
       line-height:16px;
       margin:0 0 20px;
-  }
-  #footer .box{
+    }
+    #footer .box{
       padding:0 10px;
       box-sizing:border-box;
       -moz-box-sizing:border-box;
       -o-box-sizing:border-box;
       -webkit-box-sizing:border-box;
-  }
-  #footer .logo{
+    }
+    #footer .logo{
       display:block;
       float:none;
       width:120px;
       margin:0 0 20px;
       padding:3px 0 0;
-  }
-  #footer .logo a{
+    }
+    #footer .logo a{
       display:block;
-  }
-  #footer .copy{
+    }
+    #footer .copy{
       display:block;
       font-size:11px;
       line-height:14px;
       margin:0 0 5px;
-  }
-  .footer-top .box{
+    }
+    .footer-top .box{
       float:left;
       width:25%;
-  }
-  .footer-top .box:last-child{
+    }
+    .footer-top .box:last-child{
       color:#fff;
-  }
-  .footer-top .box-hold{
+    }
+    .footer-top .box-hold{
       float:right;
       width:45%;
-  }
-  .footer-top .box-hold .box{
+    }
+    .footer-top .box-hold .box{
       width:50%;
-  }
-  .footer-top ul{
+    }
+    .footer-top ul{
       list-style:none;
       padding:0;
       margin:0 0 29px;
-  }
-  .footer-top ul li{
+    }
+    .footer-top ul li{
       margin:0 0 2px;
-  }
-  .footer-top ul a{
+    }
+    .footer-top ul a{
       position:relative;
-  }
-  .footer-top ul a{
+    }
+    .footer-top ul a{
       position:relative;
-  }
-  .footer-top ul a:before{
+    }
+    .footer-top ul a:before{
       content:'';
       position:absolute;
       bottom:0;
@@ -1603,468 +1557,468 @@ include "../app/vistas/includes/footer.php";
       -ms-transition:transform .2s ease-in-out;
       -o-transition:transform .2s ease-in-out;
       transition:transform .2s ease-in-out;
-  }
-  .footer-top ul a:hover:before{
+    }
+    .footer-top ul a:hover:before{
       -webkit-transform:scale(1);
       -moz-transform:scale(1);
       -ms-transform:scale(1);
       -o-transform:scale(1);
       transform:scale(1);
-  }
-  .footer-top .box:last-child ul li{
+    }
+    .footer-top .box:last-child ul li{
       position:relative;
       padding:0 0 0 28px;
       margin:0 0 15px;
-  }
-  .footer-top .box-hold .box:last-child ul li{
+    }
+    .footer-top .box-hold .box:last-child ul li{
       padding:0;
       margin:0 0 2px;
-  }
-  .footer-top .box-hold .box:last-child ul li a{
+    }
+    .footer-top .box-hold .box:last-child ul li a{
       color:#fff;
-  }
-  .footer-top .box-hold .box:last-child ul li a:before{
+    }
+    .footer-top .box-hold .box:last-child ul li a:before{
       background:#fff;
-  }
-  .shipping-list{
+    }
+    .shipping-list{
       padding:0;
       margin:0;
       list-style:none;
       overflow:hidden;
-  }
-  .shipping-list li{
+    }
+    .shipping-list li{
       float:left;
       margin:0 43px 10px 0;
-  }
-  .shipping-list dl{
+    }
+    .shipping-list dl{
       margin:0 0 15px;
-  }
-  .shipping-list dl dt,.shipping-list dl dd{
+    }
+    .shipping-list dl dt,.shipping-list dl dd{
       display:inline-block;
       vertical-align:top;
       margin:0 7px 0 0;
-  }
-  .shipping-list dl dd{
+    }
+    .shipping-list dl dd{
       color:#de183c;
-  }
-  .open-check{
+    }
+    .open-check{
       display:none;
-  }
-  @media (max-width: 1470px){
+    }
+    @media (max-width: 1470px){
 
       .footer-top .box-hold{
           width:53%;
       }
-  }
-  @media (max-width: 1270px){
+    }
+    @media (max-width: 1270px){
 
-   .container{
-       width:95vw;
-   }
-}
-@media (max-width: 1200px){
+     .container{
+         width:95vw;
+     }
+    }
+    @media (max-width: 1200px){
 
-   .footer-top .box-hold{
-       width:50%;
-   }
-   .support-list li{
-       margin:0 15px 10px;
-   }
-   #footer::before{
-       left:72%;
-   }
-   .children > li.children-img img{
-       width:200px;
-   }
-   .container{
-       width:91vw;
-   }
-}
-@media (max-width: 1024px){
+     .footer-top .box-hold{
+         width:50%;
+     }
+     .support-list li{
+         margin:0 15px 10px;
+     }
+     #footer::before{
+         left:72%;
+     }
+     .children > li.children-img img{
+         width:200px;
+     }
+     .container{
+         width:91vw;
+     }
+    }
+    @media (max-width: 1024px){
 
-   .container{
-       width:89vw;
-   }
-   #header{
-       padding:15px 0 0;
-       margin:0 0 30px;
-   }
-   .header-top{
-       margin:0 0 10px;
-   }
-   .product-description,.product-images{
-       width:50%;
-   }
-   .product-description h1{
-       font-size:40px;
-       line-height:45px;
-   }
-   .thumbnail label{
-       width:50px;
-       height:50px;
-   }
-   .fade-gallery .switcher{
-       height:105px;
-   }
-   #open-switch:checked ~ .product-box .fade-gallery .switcher{
-       height:220px;
-   }
-   .product-box{
-       padding:0 0 170px;
-       margin:0 0 50px;
-   }
-   #open-switch:checked ~ .product-box{
-       padding-bottom:285px;
-   }
-   .information-inner{
-       margin:0 -20px;
-   }
-   .payment-box{
-       margin:0 -20px 50px;
-   }
-   .information-box .col,.payment-box .col{
-       padding:0 20px;
-   }
-   .information-box,#categories-box .categories-wrap,.best-sellers{
-       margin:0 0 50px;
-   }
-   .information-variant01{
-       padding:30px 0 15px;
-   }
-   .advantages-list{
-       margin:0 -15px;
-   }
-   .advantages-list li{
-       padding:0 15px;
-       margin:0 0 15px;
-   }
-   .wrapper h2,#categories-box h2{
-       font-size:30px;
-       line-height:35px;
-       margin:0 0 30px;
-   }
-   .best-variant01 li{
-       width:50%;
-   }
-   .best-variant01 li a{
-       min-height:350px;
-   }
-   .best-variant01 .hold-img{
-       height:220px;
-       margin:0 0 5px;
-       text-align:center;
-   }
-   #nav{
-       padding:10px 0;
-       margin:0 0 10px;
-   }
-   #topnav{
-       position:static;
-       float:none;
-       margin:0;
-       padding:0;
-       width:100%;
-       background:none;
-   }
-   #topnav:after{
-       display:none;
-   }
-   #topnav > li > .open-check ~ .children-holder .children > li:nth-child(1),#topnav > li > .open-check ~ .children-holder .children > li:nth-child(2),.children > li > .open-check ~ .children2 > li:nth-child(1),.children > li > .open-check ~ .children2 > li:nth-child(2){
-       display:block;
-   }
-   .hold-toogle{
-       display:block;
-   }
-   .toogle-menu{
-       display:block;
-   }
-   .menu-holder{
-       position:fixed;
-       top:0;
-       right:-300px;
-       height:100%;
-       overflow:hidden;
-       overflow-y:auto;
-       width:280px;
-       background:#de183c;
-       z-index:1005;
-       -webkit-transition:right .2s ease-in-out;
-       -moz-transition:right .2s ease-in-out;
-       -ms-transition:right .2s ease-in-out;
-       -o-transition:right .2s ease-in-out;
-       transition:right .2s ease-in-out;
-   }
-   #nav .open-check:checked ~ .menu-holder{
-       right:0;
-   }
-   #topnav > li{
-       display:block;
-       padding:0;
-       position:static;
-       margin:0;
-       text-align:left;
-       float:none;
-   }
-   #header #topnav > li:before{
-       display:none;
-   }
-   #header #topnav > li > label,.children > li > a,.children > li > label,.children2 li a,.children2 li label,#header #topnav > li > a,#header #topnav > li > a:link,#header #topnav > li > a:visited{
-       color:#fff!important;
-       -webkit-border-radius:0px;
-       -moz-border-radius:0px;
-       border-radius:0px;
-       background:#de183c;
-       padding:15px 30px 15px 10px;
-       border-bottom:1px solid #dadae5;
-       display:block;
-       cursor:pointer;
-       text-transform:none;
-       font-size:14px;
-       line-height:18px;
-       font-weight:normal;
-       -webkit-transition:all .2s ease-in-out;
-       -moz-transition:all .2s ease-in-out;
-       -ms-transition:all .2s ease-in-out;
-       -o-transition:all .2s ease-in-out;
-       transition:all .2s ease-in-out;
-   }
-   #header #topnav > li:hover > a,#header #topnav > li:hover > label,.children > li:hover > a,.children > li:hover > label,.children2 > li:hover > a,.children2 > li:hover > label{
-       color:#fff!important;
-       background:rgba(255,255,255,0.3);
-   }
-   .children > li > label.back-label,.children2 li label.back-label{
-       padding:15px 10px 15px 30px;
-   }
-   .children > li > a{
-       margin:0;
-       font-weight:normal;
-   }
-   #topnav > li > label,.children > li > label,.children2 li label{
-       position:relative;
-   }
-   #topnav > li > label .fa,.children > li > label .fa,.children2 li label.back-label .fa{
-       position:absolute;
-       right:10px;
-       top:50%;
-       font-size:20px;
-       margin:-10px 0 0;
-   }
-   .children > li > label.back-label .fa,.children2 li label.back-label .fa{
-       right:auto;
-       left:10px;
-   }
-   #topnav > li > a:hover{
-       color:#575757;
-       background:#fff;
-   }
-   #header #topnav > li > .open-check + a,#header .children > li > .open-check + a{
-       display:none;
-   }
-   .close-menu{
-       display:block;
-       padding:15px 10px;
-       color:#fff;
-       background:#000;
-       text-transform:uppercase;
-       font-weight:bold;
-       cursor:pointer;
-       font-size:14px;
-       line-height:16px;
-       position:relative;
-   }
-   .close-menu .fa{
-       float:right;
-       font-size:20px;
-       margin:-2px 0 0;
-   }
-   .children,.children2,#topnav > li:hover .children{
-       opacity:1;
-       visibility:visible;
-       display:block;
-       position:absolute;
-       top:46px;
-       bottom:0;
-       margin:0;
-       z-index:20;
-       background:#de183c;
-       border:none;
-       padding:0;
-       width:100%;
-       left:100%;
-       overflow:hidden;
-       overflow-y:auto;
-       -webkit-transition:left .2s ease-in-out;
-       -moz-transition:left .2s ease-in-out;
-       -ms-transition:left .2s ease-in-out;
-       -o-transition:left .2s ease-in-out;
-       transition:left .2s ease-in-out;
-       -webkit-box-shadow:none;
-       -moz-box-shadow:none;
-       box-shadow:none;
-   }
-   .children2{
-       top:0;
-   }
-   .children2 li{
-       margin:0;
-       width:100%;
-       display:block;
-       padding:0;
-   }
-   .children > li{
-       width:100%;
-       float:none;
-       padding:0;
-       margin:0;
-       position:static;
-   }
-   .children > li.children-img{
-       display:none;
-   }
-   .children-holder{
-       position:static;
-       margin:0;
-   }
-   #topnav > li > .open-check:checked ~ .children-holder .children,.children > li .open-check:checked ~ .children2{
-       left:0;
-   }
-   .children > li > a:before,.children2 li a:before,.children2 li:before,#topnav > li > a:before{
-       display:none;
-   }
-   .overlay{
-       display:block;
-       position:fixed;
-       top:0;
-       left:100%;
-       width:100%;
-       height:100%;
-       background:rgba(0,0,0,0.5);
-       z-index:1000;
-       -webkit-transition:left .2s ease-in-out;
-       -moz-transition:left .2s ease-in-out;
-       -ms-transition:left .2s ease-in-out;
-       -o-transition:left .2s ease-in-out;
-       transition:left .2s ease-in-out;
-   }
-   #nav .open-check:checked ~ .overlay{
-       left:0;
-   }
-   .children > li:before{
-       display:none;
-   }
-   .best-sellers h2{
-       font-size:40px;
-       line-height:45px;
-       margin:0 0 10px;
-   }
-   #categories-box .categories-item{
-       margin:0 0 15px;
-       width:50%;
-   }
-   .category-image img{
-       top:auto;
-       -webkit-transform:none;
-       -moz-transform:none;
-       -ms-transform:none;
-       -o-transform:none;
-       transform:none;
-   }
-   #categories-box .category-image,#categories-box ul{
-       float:left;
-       width:30%;
-       -webkit-box-sizing:border-box;
-       -moz-box-sizing:border-box;
-       box-sizing:border-box;
-   }
-   #categories-box ul{
-       padding:0 0 11px;
-       text-align:left;
-       width:65%;
-   }
-   #categories-box li{
-       display:inline-block;
-       vertical-align:top;
-       width:49%;
-   }
-   #categories-box .category-image{
-       padding:0 20px 0 0;
-   }
-   #categories-box .category-image{
-       height:200px;
-   }
-   .support-list li{
-       margin:0 10px 10px;
-   }
-}
-@media (max-width: 850px){
+     .container{
+         width:89vw;
+     }
+     #header{
+         padding:15px 0 0;
+         margin:0 0 30px;
+     }
+     .header-top{
+         margin:0 0 10px;
+     }
+     .product-description,.product-images{
+         width:50%;
+     }
+     .product-description h1{
+         font-size:40px;
+         line-height:45px;
+     }
+     .thumbnail label{
+         width:50px;
+         height:50px;
+     }
+     .fade-gallery .switcher{
+         height:105px;
+     }
+     #open-switch:checked ~ .product-box .fade-gallery .switcher{
+         height:220px;
+     }
+     .product-box{
+         padding:0 0 170px;
+         margin:0 0 50px;
+     }
+     #open-switch:checked ~ .product-box{
+         padding-bottom:285px;
+     }
+     .information-inner{
+         margin:0 -20px;
+     }
+     .payment-box{
+         margin:0 -20px 50px;
+     }
+     .information-box .col,.payment-box .col{
+         padding:0 20px;
+     }
+     .information-box,#categories-box .categories-wrap,.best-sellers{
+         margin:0 0 50px;
+     }
+     .information-variant01{
+         padding:30px 0 15px;
+     }
+     .advantages-list{
+         margin:0 -15px;
+     }
+     .advantages-list li{
+         padding:0 15px;
+         margin:0 0 15px;
+     }
+     .wrapper h2,#categories-box h2{
+         font-size:30px;
+         line-height:35px;
+         margin:0 0 30px;
+     }
+     .best-variant01 li{
+         width:50%;
+     }
+     .best-variant01 li a{
+         min-height:350px;
+     }
+     .best-variant01 .hold-img{
+         height:220px;
+         margin:0 0 5px;
+         text-align:center;
+     }
+     #nav{
+         padding:10px 0;
+         margin:0 0 10px;
+     }
+     #topnav{
+         position:static;
+         float:none;
+         margin:0;
+         padding:0;
+         width:100%;
+         background:none;
+     }
+     #topnav:after{
+         display:none;
+     }
+     #topnav > li > .open-check ~ .children-holder .children > li:nth-child(1),#topnav > li > .open-check ~ .children-holder .children > li:nth-child(2),.children > li > .open-check ~ .children2 > li:nth-child(1),.children > li > .open-check ~ .children2 > li:nth-child(2){
+         display:block;
+     }
+     .hold-toogle{
+         display:block;
+     }
+     .toogle-menu{
+         display:block;
+     }
+     .menu-holder{
+         position:fixed;
+         top:0;
+         right:-300px;
+         height:100%;
+         overflow:hidden;
+         overflow-y:auto;
+         width:280px;
+         background:#de183c;
+         z-index:1005;
+         -webkit-transition:right .2s ease-in-out;
+         -moz-transition:right .2s ease-in-out;
+         -ms-transition:right .2s ease-in-out;
+         -o-transition:right .2s ease-in-out;
+         transition:right .2s ease-in-out;
+     }
+     #nav .open-check:checked ~ .menu-holder{
+         right:0;
+     }
+     #topnav > li{
+         display:block;
+         padding:0;
+         position:static;
+         margin:0;
+         text-align:left;
+         float:none;
+     }
+     #header #topnav > li:before{
+         display:none;
+     }
+     #header #topnav > li > label,.children > li > a,.children > li > label,.children2 li a,.children2 li label,#header #topnav > li > a,#header #topnav > li > a:link,#header #topnav > li > a:visited{
+         color:#fff!important;
+         -webkit-border-radius:0px;
+         -moz-border-radius:0px;
+         border-radius:0px;
+         background:#de183c;
+         padding:15px 30px 15px 10px;
+         border-bottom:1px solid #dadae5;
+         display:block;
+         cursor:pointer;
+         text-transform:none;
+         font-size:14px;
+         line-height:18px;
+         font-weight:normal;
+         -webkit-transition:all .2s ease-in-out;
+         -moz-transition:all .2s ease-in-out;
+         -ms-transition:all .2s ease-in-out;
+         -o-transition:all .2s ease-in-out;
+         transition:all .2s ease-in-out;
+     }
+     #header #topnav > li:hover > a,#header #topnav > li:hover > label,.children > li:hover > a,.children > li:hover > label,.children2 > li:hover > a,.children2 > li:hover > label{
+         color:#fff!important;
+         background:rgba(255,255,255,0.3);
+     }
+     .children > li > label.back-label,.children2 li label.back-label{
+         padding:15px 10px 15px 30px;
+     }
+     .children > li > a{
+         margin:0;
+         font-weight:normal;
+     }
+     #topnav > li > label,.children > li > label,.children2 li label{
+         position:relative;
+     }
+     #topnav > li > label .fa,.children > li > label .fa,.children2 li label.back-label .fa{
+         position:absolute;
+         right:10px;
+         top:50%;
+         font-size:20px;
+         margin:-10px 0 0;
+     }
+     .children > li > label.back-label .fa,.children2 li label.back-label .fa{
+         right:auto;
+         left:10px;
+     }
+     #topnav > li > a:hover{
+         color:#575757;
+         background:#fff;
+     }
+     #header #topnav > li > .open-check + a,#header .children > li > .open-check + a{
+         display:none;
+     }
+     .close-menu{
+         display:block;
+         padding:15px 10px;
+         color:#fff;
+         background:#000;
+         text-transform:uppercase;
+         font-weight:bold;
+         cursor:pointer;
+         font-size:14px;
+         line-height:16px;
+         position:relative;
+     }
+     .close-menu .fa{
+         float:right;
+         font-size:20px;
+         margin:-2px 0 0;
+     }
+     .children,.children2,#topnav > li:hover .children{
+         opacity:1;
+         visibility:visible;
+         display:block;
+         position:absolute;
+         top:46px;
+         bottom:0;
+         margin:0;
+         z-index:20;
+         background:#de183c;
+         border:none;
+         padding:0;
+         width:100%;
+         left:100%;
+         overflow:hidden;
+         overflow-y:auto;
+         -webkit-transition:left .2s ease-in-out;
+         -moz-transition:left .2s ease-in-out;
+         -ms-transition:left .2s ease-in-out;
+         -o-transition:left .2s ease-in-out;
+         transition:left .2s ease-in-out;
+         -webkit-box-shadow:none;
+         -moz-box-shadow:none;
+         box-shadow:none;
+     }
+     .children2{
+         top:0;
+     }
+     .children2 li{
+         margin:0;
+         width:100%;
+         display:block;
+         padding:0;
+     }
+     .children > li{
+         width:100%;
+         float:none;
+         padding:0;
+         margin:0;
+         position:static;
+     }
+     .children > li.children-img{
+         display:none;
+     }
+     .children-holder{
+         position:static;
+         margin:0;
+     }
+     #topnav > li > .open-check:checked ~ .children-holder .children,.children > li .open-check:checked ~ .children2{
+         left:0;
+     }
+     .children > li > a:before,.children2 li a:before,.children2 li:before,#topnav > li > a:before{
+         display:none;
+     }
+     .overlay{
+         display:block;
+         position:fixed;
+         top:0;
+         left:100%;
+         width:100%;
+         height:100%;
+         background:rgba(0,0,0,0.5);
+         z-index:1000;
+         -webkit-transition:left .2s ease-in-out;
+         -moz-transition:left .2s ease-in-out;
+         -ms-transition:left .2s ease-in-out;
+         -o-transition:left .2s ease-in-out;
+         transition:left .2s ease-in-out;
+     }
+     #nav .open-check:checked ~ .overlay{
+         left:0;
+     }
+     .children > li:before{
+         display:none;
+     }
+     .best-sellers h2{
+         font-size:40px;
+         line-height:45px;
+         margin:0 0 10px;
+     }
+     #categories-box .categories-item{
+         margin:0 0 15px;
+         width:50%;
+     }
+     .category-image img{
+         top:auto;
+         -webkit-transform:none;
+         -moz-transform:none;
+         -ms-transform:none;
+         -o-transform:none;
+         transform:none;
+     }
+     #categories-box .category-image,#categories-box ul{
+         float:left;
+         width:30%;
+         -webkit-box-sizing:border-box;
+         -moz-box-sizing:border-box;
+         box-sizing:border-box;
+     }
+     #categories-box ul{
+         padding:0 0 11px;
+         text-align:left;
+         width:65%;
+     }
+     #categories-box li{
+         display:inline-block;
+         vertical-align:top;
+         width:49%;
+     }
+     #categories-box .category-image{
+         padding:0 20px 0 0;
+     }
+     #categories-box .category-image{
+         height:200px;
+     }
+     .support-list li{
+         margin:0 10px 10px;
+     }
+    }
+    @media (max-width: 850px){
 
-   .footer-top .box-hold{
-       width:100%;
-   }
-   .footer-top .box-hold .box:last-child ul li a{
-       color:#000;
-   }
-   .footer-top .box-hold .box:last-child ul li a::before{
-       background:#000;
-   }
-   #threendy_copyright{
-       text-align:center;
-   }
-   .thumbnail label{
-       width:70px;
-       height:70px;
-   }
-   .fade-gallery .switcher{
-       height:80px;
-   }
-   #open-switch:checked ~ .product-box .fade-gallery .switcher{
-       height:180px;
-   }
-   .product-box{
-       padding:0 0 140px;
-       margin:0 0 50px;
-   }
-   #open-switch:checked ~ .product-box{
-       padding-bottom:240px;
-   }
-   .support-list li{
-       width:48%;
-       margin:0 0 10px;
-   }
-   #header .contact-phone{
-       font-size:20px;
-       line-height:22px;
-   }
-   #header{
-       margin:0 0 15px;
-   }
-   .support-list{
-       margin:15px 0 0;
-   }
-   .product-description,.product-images,#product-container .variant04 .product-images,#product-container .variant04 .product-description{
-       float:none;
-       width:100%;
-   }
-   #main .open-modal:checked ~ .product-box .product-images{
-       width:100%;
-   }
-   .fade-gallery .holder-img,#main .open-modal:checked ~ .product-box .fade-gallery .holder-img,#product-container .variant04 .fade-gallery .holder-img{
-       height:400px;
-   }
-   .fade-gallery .close,#main .open-modal:checked ~ .product-box .fade-gallery .close{
-       display:none;
-   }
-   .fade-gallery label[for="modal"] > span:first-child,#main .open-modal:checked ~ .product-box .fade-gallery label[for="modal"] > span:first-child{
-       display:none;
-   }
-   #main .open-modal:checked ~ .product-box .product-description{
-       position:static;
-       -webkit-transform:scale(1);
-       -moz-transform:scale(1);
-       -ms-transform:scale(1);
-       -o-transform:scale(1);
-       transform:scale(1);
-   }
+     .footer-top .box-hold{
+         width:100%;
+     }
+     .footer-top .box-hold .box:last-child ul li a{
+         color:#000;
+     }
+     .footer-top .box-hold .box:last-child ul li a::before{
+         background:#000;
+     }
+     #threendy_copyright{
+         text-align:center;
+     }
+     .thumbnail label{
+         width:70px;
+         height:70px;
+     }
+     .fade-gallery .switcher{
+         height:80px;
+     }
+     #open-switch:checked ~ .product-box .fade-gallery .switcher{
+         height:180px;
+     }
+     .product-box{
+         padding:0 0 140px;
+         margin:0 0 50px;
+     }
+     #open-switch:checked ~ .product-box{
+         padding-bottom:240px;
+     }
+     .support-list li{
+         width:48%;
+         margin:0 0 10px;
+     }
+     #header .contact-phone{
+         font-size:20px;
+         line-height:22px;
+     }
+     #header{
+         margin:0 0 15px;
+     }
+     .support-list{
+         margin:15px 0 0;
+     }
+     .product-description,.product-images,#product-container .variant04 .product-images,#product-container .variant04 .product-description{
+         float:none;
+         width:100%;
+     }
+     #main .open-modal:checked ~ .product-box .product-images{
+         width:100%;
+     }
+     .fade-gallery .holder-img,#main .open-modal:checked ~ .product-box .fade-gallery .holder-img,#product-container .variant04 .fade-gallery .holder-img{
+         height:400px;
+     }
+     .fade-gallery .close,#main .open-modal:checked ~ .product-box .fade-gallery .close{
+         display:none;
+     }
+     .fade-gallery label[for="modal"] > span:first-child,#main .open-modal:checked ~ .product-box .fade-gallery label[for="modal"] > span:first-child{
+         display:none;
+     }
+     #main .open-modal:checked ~ .product-box .product-description{
+         position:static;
+         -webkit-transform:scale(1);
+         -moz-transform:scale(1);
+         -ms-transform:scale(1);
+         -o-transform:scale(1);
+         transform:scale(1);
+     }
             /*#main .open-modal:checked ~ .product-box .fade-gallery .holder-img img{
             -webkit-transform:translateY(-50%) scale(1);
             -moz-transform:translateY(-50%) scale(1);
@@ -2214,151 +2168,151 @@ include "../app/vistas/includes/footer.php";
       }
       @media (max-width: 650px){
 
-       .product-description .col{
-           display:block;
-           width:100%;
-           padding:0;
-       }
-       #footer{
-           overflow:visible;
-           padding:15px 0 0;
-       }
-       .footer-top .box,.footer-top .box-hold .box:first-child,.footer-top .box-hold .box{
-           float:none;
-           width:100%;
-       }
-       .footer-top .box:last-child ul li{
-           padding:0;
-           margin:0 0 10px;
-       }
-       .footer-top ul{
-           margin:0 0 10px;
-       }
-       #footer h3{
-           margin:0 0 10px;
-           text-align:center;
-       }
-       .wrapper h2,#categories-box h2{
-           font-size:24px;
-           line-height:26px;
-           margin:0 0 15px;
-       }
-       #categories-box .category-image{
-           height:150px;
-       }
-       .advantages-list li{
-           display:block;
-           width:100%;
-           padding:0;
-       }
-       #header .logo{
-           float:none;
-           display:block;
-           margin:0 auto 15px;
-       }
-       #header .contact-phone{
-           float:none;
-           display:block;
-           margin:0;
-           text-align:center;
-           padding:0;
-       }
-       .thumbnail,#product-container .variant04 .thumbnail{
-           width:25%;
-           margin:0 0 10px;
-       }
-       #open-switch:checked ~ .product-box .fade-gallery .switcher,#product-container .variant04 #open-switch:checked ~ .product-box .fade-gallery .switcher{
-           height:270px;
-       }
-       .best-variant01 .info-wrap{
-           padding:0 10px 5px;
-       }
-       .best-variant01 li a{
-           min-height:300px;
-       }
-       #header{
-           position:relative;
-       }
-   }
-   @media (max-width: 500px){
+         .product-description .col{
+             display:block;
+             width:100%;
+             padding:0;
+         }
+         #footer{
+             overflow:visible;
+             padding:15px 0 0;
+         }
+         .footer-top .box,.footer-top .box-hold .box:first-child,.footer-top .box-hold .box{
+             float:none;
+             width:100%;
+         }
+         .footer-top .box:last-child ul li{
+             padding:0;
+             margin:0 0 10px;
+         }
+         .footer-top ul{
+             margin:0 0 10px;
+         }
+         #footer h3{
+             margin:0 0 10px;
+             text-align:center;
+         }
+         .wrapper h2,#categories-box h2{
+             font-size:24px;
+             line-height:26px;
+             margin:0 0 15px;
+         }
+         #categories-box .category-image{
+             height:150px;
+         }
+         .advantages-list li{
+             display:block;
+             width:100%;
+             padding:0;
+         }
+         #header .logo{
+             float:none;
+             display:block;
+             margin:0 auto 15px;
+         }
+         #header .contact-phone{
+             float:none;
+             display:block;
+             margin:0;
+             text-align:center;
+             padding:0;
+         }
+         .thumbnail,#product-container .variant04 .thumbnail{
+             width:25%;
+             margin:0 0 10px;
+         }
+         #open-switch:checked ~ .product-box .fade-gallery .switcher,#product-container .variant04 #open-switch:checked ~ .product-box .fade-gallery .switcher{
+             height:270px;
+         }
+         .best-variant01 .info-wrap{
+             padding:0 10px 5px;
+         }
+         .best-variant01 li a{
+             min-height:300px;
+         }
+         #header{
+             position:relative;
+         }
+     }
+     @media (max-width: 500px){
 
-       #header .logo{
-           width:120px;
-       }
-       #header .contact-phone{
-           font-size:14px;
-           line-height:16px;
-       }
-       .fade-gallery .holder-img,#main .open-modal:checked ~ .product-box .fade-gallery .holder-img,#product-container .variant04 .fade-gallery .holder-img{
-           height:300px;
-       }
-       .container{
-           padding:0 10px;
-       }
-       .best-variant01 li{
-           width:100%;
-           padding:0;
-       }
-       .best-variant01 li a{
-           min-height:inherit;
-           padding:10px 0 0;
-       }
-       .best-variant01 .info-wrap{
-           position:static;
-           display:block;
-       }
-       .best-variant01 li:nth-child(1):before,.best-variant01 li:nth-child(6):before{
-           display:none;
-       }
-       .best-variant01 .title{
-           height:auto;
-       }
-       #categories-box .category-image,#categories-box ul{
-           padding:10px 0 0;
-           float:none;
-           width:100%;
-       }
-       #categories-box .category-image{
-           display:none;
-       }
-       .support-list li{
-           width:100%;
-           margin:0;
-       }
-       .footer-top .box:last-child ul li{
-           margin:0;
-       }
-       .payment-box .col li img{
-           -webkit-transform:scale(0.7);
-           -moz-transform:scale(0.7);
-           -ms-transform:scale(0.7);
-           -o-transform:scale(0.7);
-           transform:scale(0.7);
-       }
-   }
-   #threendy_copyright{
-       margin:0 0 15px;
-   }
-   #main .container{
-       overflow:hidden;
-       max-width:100%;
-       padding:0;
-   }
-   #main .product-gallery-main{
-       max-width:1270px;
-       margin:0 auto;
-       padding:0 20px;
-   }
-   @media (max-width: 500px){
+         #header .logo{
+             width:120px;
+         }
+         #header .contact-phone{
+             font-size:14px;
+             line-height:16px;
+         }
+         .fade-gallery .holder-img,#main .open-modal:checked ~ .product-box .fade-gallery .holder-img,#product-container .variant04 .fade-gallery .holder-img{
+             height:300px;
+         }
+         .container{
+             padding:0 10px;
+         }
+         .best-variant01 li{
+             width:100%;
+             padding:0;
+         }
+         .best-variant01 li a{
+             min-height:inherit;
+             padding:10px 0 0;
+         }
+         .best-variant01 .info-wrap{
+             position:static;
+             display:block;
+         }
+         .best-variant01 li:nth-child(1):before,.best-variant01 li:nth-child(6):before{
+             display:none;
+         }
+         .best-variant01 .title{
+             height:auto;
+         }
+         #categories-box .category-image,#categories-box ul{
+             padding:10px 0 0;
+             float:none;
+             width:100%;
+         }
+         #categories-box .category-image{
+             display:none;
+         }
+         .support-list li{
+             width:100%;
+             margin:0;
+         }
+         .footer-top .box:last-child ul li{
+             margin:0;
+         }
+         .payment-box .col li img{
+             -webkit-transform:scale(0.7);
+             -moz-transform:scale(0.7);
+             -ms-transform:scale(0.7);
+             -o-transform:scale(0.7);
+             transform:scale(0.7);
+         }
+     }
+     #threendy_copyright{
+         margin:0 0 15px;
+     }
+     #main .container{
+         overflow:hidden;
+         max-width:100%;
+         padding:0;
+     }
+     #main .product-gallery-main{
+         max-width:1270px;
+         margin:0 auto;
+         padding:0 20px;
+     }
+     @media (max-width: 500px){
 
-       #main .product-gallery-main{
-           padding:0 10px;
-       }
-       .information-box .col{
-           padding:0;
-       }
-   }
-}
+         #main .product-gallery-main{
+             padding:0 10px;
+         }
+         .information-box .col{
+             padding:0;
+         }
+     }
+ }
     /*! CSS Used from: https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ;
     media=all */
     @media all{
