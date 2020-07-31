@@ -64,8 +64,9 @@
 			//echo $this->metodoActual;
 
 			//obtener los posibles parametros
+
 			$this->parametros = count($url) != 0 ? array_values($url) : [];
-            
+            //var_dump($this->parametros);
 			//llamar callback con parametros array
 			
 			echo call_user_func_array([$this->controladorActual,$this->metodoActual],$this->parametros);

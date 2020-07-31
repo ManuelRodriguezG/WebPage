@@ -26,6 +26,7 @@
 			//	'titulo'=>'Bienvenido al HOME',
 			//	
 			//];
+			
 			$this->vista('inicio',$datos);
 		}
 		

@@ -17,6 +17,19 @@
 	?>
 	<div class="container">
   	<?php 
+  		/*$contentIndex = array(
+  			array(
+  			),
+			array(
+				"include"=>"../app/vistas/paginas/modules/carousel/carousel-single.php",
+				"style"=>array(
+					"http://localhost/WebPage/mvc/css/carousel/carousel-single/carousel-single.css"
+				),
+				"script"=>array(
+					"http://localhost/WebPage/mvc/js/carousel/carousel-single/carousel-single.js"
+				)
+			)
+		);*/
 		include "../app/vistas/paginas/modules/carousel/carousel-single.php";
 		include "../app/vistas/paginas/modules/categories/categories-gallery.php";
 		include "../app/vistas/paginas/modules/reviews/social/social-reviews-single.php";
