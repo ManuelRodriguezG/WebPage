@@ -8,8 +8,9 @@
 			$this->vista("dashboard");
 		}
 
-		public function products($params){
+		public function products(...$params){
 			var_dump($params);
+			
 		}
 	}
 ?>

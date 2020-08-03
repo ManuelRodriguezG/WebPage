@@ -49,7 +49,7 @@
 			$this->controladorActual = new $this->controladorActual;
             //var_dump(count($url) != 0);
 			//chequear la segunda parte de la url que seria el metodo
-		//var_dump(method_exists($this->controladorActual, $url[1]));
+			//var_dump(method_exists($this->controladorActual, $url[1]));
 			if(count($url) != 0){
     			if(isset($url[1])){
     				if(method_exists($this->controladorActual, $url[1])){
@@ -65,7 +65,7 @@
 
 			//obtener los posibles parametros
 
-			$this->parametros = count($url) != 0 ? array_values($url) : [];
+			$this->parametros = count($url) != 0 ? ($url) : [];
             //var_dump($this->parametros);
 			//llamar callback con parametros array
 			

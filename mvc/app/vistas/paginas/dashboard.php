@@ -27,19 +27,32 @@
 				</section>
 			</nav>-->
 			<div class="site-inner slide-right">
-				<section class="container-fluid" >
+				<section class="" >
 					<!-- ACCORDION ROW -->
 					<div class="row" style="background: #dadadac9;width: 100%;height: 1000px;">
 						<!-- Content -->
+						<div class="container">
+							<div class="row row-content-product-edition" style="margin: 1rem;padding: 1rem;background: white;border-radius: 5px;">
+								<div class="" style="width: 100%;">
+									<label class="title-section">Imágenes</label>
+								</div>
+								<div class="" style="width: 100%;">
+									<form action="upload.php" method="POST">
+										<input type="file" multiple>
+										<p>Drag your files here or click in this area.</p>
+									</form>
+								</div>
+							</div>
+						</div>
 					</div>
-					
+
 				</section>
 			</div>
-			
+
 			<!-- NAVIGATION -->
 			<div class="navigation slide-right">
-				
-				
+
+
 				<div class="navigation-content">
 					<h3>Productos</h3>
 					<ul class="navigation-menu">
@@ -60,9 +73,62 @@
 				</div>
 			</div>
 			
-	</div>
-	
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('form input').change(function () {
+					$('form p').text(this.files.length + " file(s) selected");
+				});
+			});
+		</script>
+		<style type="text/css">
+		form{
+			position: relative;
+			width: 100%;
+			height: 200px;
+			border: 2px dashed #adadad;
+			border-radius: 10px;
+		}
+		form p{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			line-height: 170px;
+			color: black;
+			font-family: Arial;
+		}
+		form input{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+		form button{
+			margin: 0;
+			color: black;
+			background: #16a085;
+			border: none;
+			width: 508px;
+			height: 35px;
+			margin-top: -20px;
+			margin-left: -4px;
+			border-radius: 4px;
+			border-bottom: 4px solid #117A60;
+			transition: all .2s ease;
+			outline: none;
+		}
+		form button:hover{
+			background: #149174;
+			color: #0C5645;
+		}
+		form button:active{
+			border:0;
+		}
+	</style>
 	<style type="text/css">
+	.site-outer .row{
+		margin: 0;
+	}
 	@font-face {
 		font-family: 'Roboto';
 		font-style: normal;
@@ -124,7 +190,7 @@
 		box-sizing: border-box;
 	}
 	.site-outer {
-		overflow: hidden;
+		width: calc(100% - 250px);
 	}
 	.site-outer .navbar {
 		background-color: #fff;
@@ -204,7 +270,7 @@
 		transition: all 350ms ease;
 	}
 	.container-menu .menu div:nth-child(3) {
-		
+
 		top: 3.6rem;
 	}
 	.container-menu .menu.active div:nth-child(1),
