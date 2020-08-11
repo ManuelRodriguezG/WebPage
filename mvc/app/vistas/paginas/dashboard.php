@@ -29,7 +29,7 @@
 			<div class="site-inner slide-right">
 				<section class="" >
 					<!-- ACCORDION ROW -->
-					<div class="row" style="background: #dadadac9;width: 100%;height: 1000px;">
+					<div class="row" style="background: #dadadac9;width: 100%;">
 						<!-- Content -->
 						<div class="container">
 							<div class="row row-content-product-edition" style="margin: 1rem;padding: 1rem;background: white;border-radius: 5px;">
@@ -37,27 +37,354 @@
 									<label class="title-section">Imágenes</label>
 								</div>
 								<div class="" style="width: 100%;">
-									<form action="upload.php" method="POST">
-										<input type="file" multiple>
+									<form>
+										<input type="file" multiple id="upload-image">
 										<p>Drag your files here or click in this area.</p>
 									</form>
+									<div class="row container-images">
+										
+									</div>
 								</div>
+							</div>
+							
+							<div class="row row-content-product-edition" style="margin: 1rem;padding: 1rem;background: white;border-radius: 5px;">
+								<div class="" style="width: 100%;">
+									<label class="title-section">Información del Producto</label>
+								</div>
+								<div class="" style="width: 100%;">
+									<div>
+										<label style="padding: 0px 10px;font-size:15px;margin: 0;">
+											Nombre
+										</label>
+										<div class="container-input-animation">
+
+											<input type="text" autocomplete="off" class="input-animation" id="costo-product">
+										</div>
+									</div>
+									<div>
+										<label style="padding: 0px 10px;font-size:15px;margin: 0;">
+											Descripción
+										</label>
+										<div class="container-input-animation">
+
+											<textarea autocomplete="off" class="input-animation" id="costo-product"></textarea>
+										</div>
+									</div>
+									<div>
+										<label style="padding: 0px 10px;font-size:15px;margin: 0;">
+											Precio
+										</label>
+										<div class="container-input-animation">
+
+											<input type="text" autocomplete="off" class="input-animation" id="costo-product">
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="row row-content-product-edition" style="margin: 1rem;padding: 1rem;background: white;border-radius: 5px;">
+								<div class="" style="width: 100%;">
+									<label class="title-section">Disponibilidad</label>
+								</div>
+								<div class="" style="width: 100%;">
+
+									<div class="switch_box box_1">
+										<label style="margin: 0;">Visibilidad del Producto</label>
+										<input type="checkbox" class="switch_1">
+									</div>
+									<small style="color: gray;">Marcar para publicar el producto</small>
+								</div>
+								<div class="" style="width: 100%;">
+
+									<div class="switch_box box_1">
+										<label style="margin: 0;">Existencia</label>
+										<input type="checkbox" class="switch_1">
+										<div class="number">
+											<input class="number__field" type="number" id="number1" min="1"  step="1" value="2">
+										</div>
+									</div>
+									<small style="color: gray;">Marcar para declarar siempre existente</small>
+								</div>
+
+							</div>
+
+							<div class="row row-content-product-edition" style="margin: 1rem;padding: 1rem;background: white;border-radius: 5px;">
+								<div class="" style="width: 100%;">
+									<div>
+										<label class="title-section">Categorias</label>
+									</div>
+									<small style="color: gray;">Ingresar categorias del producto Ejemplo: Peceras, Filtros, Pez Betta, Calefacción,Cerámica</small>
+								</div>
+								<div class="" style="width: 100%;">
+									<div style="display: flex;">
+										<div style="width: 80%;">
+
+											<div class="container-input-animation">
+
+												<input type="text" autocomplete="off" class="input-animation" id="costo-product">
+
+											</div>
+										</div>
+										<div style="padding: 10px;width: 20%;justify-content: center;text-align: center;">
+											<button class="btn btn-primary add_category"><i class="fas fa-plus"></i></button>
+										</div>
+									</div>
+									<div class="container_categories row">
+										<div style="width: fit-content;background: #eaeaea;padding: 5px 10px;border-radius: 21px;margin: 5px;">
+											<label style="margin: 0;font-size: 15px;">Peceras</label>
+											<label style="margin: 0;font-size: 15px;padding: 0 5px;cursor: pointer;"><i class="fas fa-times"></i></label>
+										</div>
+										<div style="width: fit-content;background: #eaeaea;padding: 5px 10px;border-radius: 21px;margin: 5px;">
+											<label style="margin: 0;font-size: 15px;">Filtros</label>
+											<label style="margin: 0;font-size: 15px;padding: 0 5px;cursor: pointer;"><i class="fas fa-times"></i></label>
+										</div>
+										<div style="width: fit-content;background: #eaeaea;padding: 5px 10px;border-radius: 21px;margin: 5px;">
+											<label style="margin: 0;font-size: 15px;">Cerámica</label>
+											<label style="margin: 0;font-size: 15px;padding: 0 5px;cursor: pointer;"><i class="fas fa-times"></i></label>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+							<div class="row row-content-product-edition" style="margin: 1rem;padding: 1rem;background: white;border-radius: 5px;">
+								<div class="" style="width: 100%;">
+									<label class="title-section">Variantes (Próximamente)</label>
+								</div>
+								<div class="" style="width: 100%;">
+
+								</div>
+
 							</div>
 						</div>
 					</div>
 
 				</section>
 			</div>
+			<script type="text/javascript">
+				jQuery('<button class="number__btn number__btn--down"></button>').insertBefore('.number__field');
+				jQuery('<button class="number__btn number__btn--up"></button>').insertAfter('.number__field');
 
-			<!-- NAVIGATION -->
-			<div class="navigation slide-right">
+				jQuery('.number').each(function() {
+					var spinner = jQuery(this),
+					input = spinner.find('.number__field'),
+					btnUp = spinner.find('.number__btn.number__btn--up'),
+					btnDown = spinner.find('.number__btn.number__btn--down'),
+					min = input.attr('min'),
+					max = input.attr('max'),
+					step = input.attr('step'); 
+					btnUp.click(function() {
+						var oldValue = parseFloat(input.val());
+						if (oldValue >= max) {
+							var newVal = oldValue;
+						} else {
+							var newVal = oldValue + parseFloat(step);
+						}
+						spinner.find("input").val(newVal);
+						spinner.find("input").trigger("change");
+					});
+
+					btnDown.click(function() {
+						var oldValue = parseFloat(input.val());
+						if (oldValue <= min) {
+							var newVal = oldValue;
+						} else {
+							var newVal = oldValue - parseFloat(step);
+						}
+						spinner.find("input").val(newVal);
+						spinner.find("input").trigger("change");
+					});
+				});
+
+			</script>
+			<style type="text/css">
+			.container-images{
+				width: 100%;
+				padding: 10px;
+			}
+			.image-product{
+				width: 100px;
+				object-fit: cover;
+				height: 100px;
+				border-radius: 5px;
+			}
+			.wrapper-image{
+				margin: 5px;
+			}
+			.max-width{
+				width: 100%;
+			}
+		</style>
+		<style type="text/css">
+
+		.number {
+			display: inline-block;
+			font-size: 0;
+			background: #f2f2f2;
+			height: 30px;
+			float: right;
+			margin-right: 10px;
+			border-radius: 20px;
+		}
+
+		.number__field {
+			-moz-appearance:textfield;
+			display: inline-block;
+			vertical-align: top;
+			width: 55px;
+			height: 30px;
+			padding: 8px 15px;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 26px;
+			background: transparent;
+			border: none;
+			text-align: center;
+			outline: none;
+		}
+
+		.number__btn {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			width: 30px;
+			height: 30px;
+			padding: 0;
+			border: none;
+			background: transparent;
+		} 
+
+		.number__btn--down::before {
+			content: '';
+			position: absolute; 
+			display: block;
+			left: 13px;
+			top: 15px;
+			height: 3px; 
+			width: 10px;
+			background: #a9a9a9;
+		}
+		.number__btn--up::before {
+			content: '';
+			position: absolute; 
+			display: block;
+			left: 10px;
+			top: 15px;
+			height: 3px; 
+			width: 9px;
+			background: #a9a9a9;
+		}
+
+		.number__btn--up::after {
+			content: '';
+			position: absolute; 
+			display: block;
+			left: 10px;
+			top: 15px;
+			height: 3px; 
+			width: 9px;
+			background: #a9a9a9;
+			transform: rotate(90deg);
+		}
+
+		.number__field::-webkit-outer-spin-button,
+		.number__field::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
 
 
-				<div class="navigation-content">
-					<h3>Productos</h3>
-					<ul class="navigation-menu">
-						<!--<li><a href="#" class="active">Home</a></li>-->
-						<li><a href="http://localhost/WebPage/mvc/dashboard/products/upload">Agregar Productos</a></li>
+		input[type="checkbox"].switch_1{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			float: right;
+			appearance: none;
+			width: 3.5em;
+			height: 1.5em;
+			background: #ddd;
+			border-radius: 3em;
+			position: relative;
+			cursor: pointer;
+			outline: none;
+			-webkit-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+		}
+
+		input[type="checkbox"].switch_1:checked{
+			background: #0ebeff;
+		}
+
+		input[type="checkbox"].switch_1:checked + .number{
+			display: none;
+		}
+
+		input[type="checkbox"].switch_1:after{
+			position: absolute;
+			content: "";
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 50%;
+			background: #fff;
+			-webkit-box-shadow: 0 0 .25em rgba(0,0,0,.3);
+			box-shadow: 0 0 .25em rgba(0,0,0,.3);
+			-webkit-transform: scale(.7);
+			transform: scale(.7);
+			left: 0;
+			-webkit-transition: all .2s ease-in-out;
+			transition: all .2s ease-in-out;
+		}
+
+		input[type="checkbox"].switch_1:checked:after{
+			left: calc(100% - 1.5em);
+		}
+	</style>
+	<style type="text/css">
+	.container-input-animation{
+		padding: 10px;
+		position: relative;
+	}
+	.text-label-input-animation.active{
+		top: -2px;
+		background: white;
+		left: 29px;
+		font-size: 14px;
+	}
+	.text-label-input-animation{
+		position: absolute;
+		top: 19px;
+		left: 24px;
+		color: rgba(0, 0, 0, 0.25);
+		-webkit-transition:all 0.25s ease;
+		transition:all 0.25s ease;
+		-webkit-backface-visibility:hidden;
+		pointer-events:none;
+	}
+	.input-animation, textarea{
+		font-size: 17px;
+		display: block;
+		width: 100%;
+		outline: none;
+		height: calc(1.5em + .75rem + 2px);
+		padding: 0.375rem .75rem;
+		background: none;
+		background-image: none;
+		border: 1px solid #ced4da;
+		color: black;
+		border-radius: 5px;
+		-webkit-transition:border-color .25s ease, box-shadow .25s ease;
+		transition:border-color .25s ease, box-shadow .25s ease;
+	}
+</style>
+<!-- NAVIGATION -->
+<div class="navigation slide-right">
+
+
+	<div class="navigation-content">
+		<h3>Productos</h3>
+		<ul class="navigation-menu">
+			<!--<li><a href="#" class="active">Home</a></li>-->
+			<li><a href="http://localhost/WebPage/mvc/dashboard/products/upload">Agregar Productos</a></li>
 						<!--<li><a href="#">Kitchen cabinets</a></li>
 						<li><a href="#">Counters</a></li>
 						<li><a href="#">Other</a></li>-->
@@ -76,10 +403,114 @@
 		</div>
 		<script type="text/javascript">
 			$(document).ready(function(){
-				$('form input').change(function () {
+				$('form input').change(function (e) {
+					console.log(e.target.files[0]);
 					$('form p').text(this.files.length + " file(s) selected");
+					$(".container-images").attr("upload-count",this.files.length);
+					$(".loader-upload-image").css("display","block");
+					console.log(this.files);
+					console.log(e.target.files);
+					var files = this.files;
+					console.log(this.files.length);
+					var length = this.files.length;
+					var reader = new FileReader();
+					console.log(reader.readAsText(e.target.files[0]));
+					console.log(reader);
+					reader.onload = function(e) {
+						console.log(e.target);
+                        //$('.file-upload-image').attr('src', e.target.result);
+                        
+                    };
+                    if(length == 0){
+						//console.log(URL.createObjectURL(this.files[0]));
+						//console.log(reader.readAsText(this.files[0]));
+						//formData.append("file1",this.files);
+					}else{
+						for(var i = 0; i<length; i++){
+							var arch=new FileReader();
+							arch.addEventListener('load',addImage,false);
+							arch.readAsDataURL(e.target.files[i]);
+							//console.log(URL.createObjectURL(this.files[i]));
+							//console.log(reader.readAsText(this.files[i]));
+							//console.log(reader.readAsDataURL(i));
+							//formData.append("file",this.files);
+						}
+					}
+					//console.log(formData);
 				});
+				inputAnimation();
+				activarTextoInputsAnimation();
+				$(".add_category").click(function(){
+					console.log("click add category");
+				})
 			});
+
+			function addImage(ev){
+				var count = $(".container-images").attr("upload-count");
+
+				if(count-1 == 0){
+					//ocultar loader
+					$(".loader-upload-image").css("display","none");
+				}
+				$(".container-images").attr("upload-count",count-1)
+
+				console.log(ev.target.result);
+				//<div class="wrapper-image">
+					//<div class="max-width">
+						//<img src="image/products/pecera_20cm_rectangular.png" class="image-product">
+					//</div>
+				//</div>
+
+				$(".container-images").append(
+					'<div class="wrapper-image">'+
+					'<div class="max-width">'+
+					'<img src="'+ev.target.result+'" class="image-product new-image">'+
+					'</div>'+
+					'</div>'
+					);
+			}
+
+			function inputAnimation(){
+				$('.input-animation').on('keyup blur focus onchange', function (e) {
+
+					var $this = $(this),
+					label = $this.prev('label')
+					if (e.type === 'keyup') {
+						if ($this.val() === '') {
+							label.removeClass('active highlight');
+						} else {
+							label.addClass('active highlight');
+						}
+					} else if (e.type === 'blur') {
+						if( $this.val() === '' ) {
+							label.removeClass('active highlight'); 
+						} else {
+							label.removeClass('highlight');   
+						}   
+					} else if (e.type === 'focus') {
+
+						if( $this.val() === '' ) {
+							label.removeClass('highlight'); 
+						} 
+						else if( $this.val() !== '' ) {
+							label.addClass('highlight');
+						}
+					}
+				});
+			}
+
+			function activarTextoInputsAnimation(){
+				$(".input-animation").each(function(){
+					console.log($(this).val());
+					if($(this).val() != ""){
+						console.log("diferente de vacio");
+						console.log()
+						$(this).siblings(".text-label-input-animation").addClass("active");
+					}else{
+						$(this).siblings(".text-label-input-animation").removeClass("active");
+					}
+				})
+			}
 		</script>
 		<style type="text/css">
 		form{
@@ -1031,158 +1462,23 @@
 		}
 	}
 </style>
-<script type="text/javascript">
-	(function () {
-		var expand;
-		expand = function () {
-			var $input, $search;
-			$search = $('.search');
-			$input = $('.input');
-			if ($search.hasClass('close')) {
-				$search.removeClass('close');
-				$input.removeClass('square');
-			} else {
-				$search.addClass('close');
-				$input.addClass('square');
-			}
-			if ($search.hasClass('close')) {
-				$input.focus();
-			} else {
-				$input.blur();
-			}
-		};
-		$(function () {
-			var $accordion, $wideScreen;
-			$accordion = $('#accordion').children('li');
-			$wideScreen = $(window).width() > 767;
-			if ($wideScreen) {
-				$accordion.on('mouseenter click', function (e) {
-					var $this;
-					e.stopPropagation();
-					$this = $(this);
-					if ($this.hasClass('out')) {
-						$this.addClass('out');
-					} else {
-						$this.addClass('out');
-						$this.siblings().removeClass('out');
-					}
-				});
-			} else {
-				$accordion.on('touchstart touchend', function (e) {
-					var $this;
-					e.stopPropagation();
-					$this = $(this);
-					if ($this.hasClass('out')) {
-						$this.addClass('out');
-					} else {
-						$this.addClass('out');
-						$this.siblings().removeClass('out');
-					}
-				});
-			}
-		});
-		$(function () {
-			var $container, $menu, $menubtn, $navbar;
-			$menubtn = $('#hb');
-			$navbar = $('.navbar');
-			$menu = $('.navigation');
-			$container = $('.site-inner');
-			$menubtn.on('click', function (e) {
-				if ($menubtn.hasClass('active')) {
-					$menubtn.removeClass('active');
-					$menu.removeClass('slide-right');
-					$container.removeClass('slide-right');
-					$navbar.removeClass('slide-right');
-				} else {
-					$menubtn.addClass('active');
-					$menu.addClass('slide-right');
-					$container.addClass('slide-right');
-					$navbar.addClass('slide-right');
-				}
-			});
-		});
-		$(function () {
-			var $button, clickOrTouch;
-			clickOrTouch = 'click touchstart';
-			$button = $('#search-button');
-			$button.on(clickOrTouch, expand);
-		});
-		$(function () {
-			var $box;
-			$box = $('.sm-box');
-			$box.on('click', function (e) {
-				e.preventDefault();
-				var $this;
-				$this = $(this);
-				if ($this.hasClass('active')) {
-					$this.removeClass('active');
-				} else {
-					$this.addClass('active');
-				}
-			});
-		});
-	}.call(this));
 
-	$("select").each(function() {
-		var $this = $(this),
-		$options = $(this).children("option").length;
+<!--<div class="loader-upload-image" style="position: fixed;top: 0;height: 100%;background: #ffffff8a;width: 100%;display:none">
+	<div  style="transform: translateX(-50%)translateY(-50%);top: 50%;left: 50%;position: absolute;text-align: center;justify-content: center;">
+		<label style="margin:0;text-shadow: 0px 0px 2px white;">Cargando Imágenes</label>
+		<div style="width: 100%;text-align: center;justify-content: center;position: relative;">
+			<i class="far fa-image" style="position: absolute;font-size: 50px;top: 46px;left: 46px;color: white;"></i>
+			<svg version="1.1" id="L6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 
-		$this.addClass("select-hidden");
-		$this.wrap("<div class='select'></div>");
-		$this.after("<div class='select-styled'></div>");
-
-		var $styledSelect = $this.next("div.select-styled");
-		$styledSelect.text($this.children("option").eq(0).text());
-
-		var $list = $("<ul />", {
-			"class": "select-options"
-		}).insertAfter($styledSelect);
-
-		for (var i = 0; i < $options; i++) {
-			$("<li />", {
-				text: $this.children("option").eq(i).text(),
-				rel: $this.children("option").eq(i).val()
-			}).appendTo($list);
-		}
-
-		var $listItems = $list.children("li");
-
-		$styledSelect.on("click", function(e) {
-			e.stopPropagation();
-			$("div.select-styled.active").each(function() {
-				$(this).removeClass("active").next("ul.select-options").hide();
-			});
-
-			$(this).toggleClass("active").next("ul.select-options").toggle();
-		});
-
-		$listItems.on("click", function(e) {
-			e.stopPropagation();
-			$styledSelect.text($(this).text()).removeClass("active");
-			$this.val($(this).attr("rel"));
-			$list.hide();
-		});
-
-		$(document).on("click", function() {
-			$styledSelect.removeClass("active");
-			$list.hide();
-		});
-
-		$(".select-sibling").next(".select-styled").css({
-			"border-top": "0px"
-		});
-	});
-
-	(function () {
-		var $addItem = $("#add-item");
-		var $badge = $(".badge");
-		var $count = 1;
-
-		$addItem.on("click", function(e) {
-			e.preventDefault();
-			$badge.html($count++);
-		});
-	}.call(this));
-</script>
+				<rect fill="none" stroke="#fff" stroke-width="4" x="25" y="25" width="50" height="50" style="stroke: black;fill: black;">
+					<animateTransform attributeName="transform" dur="0.5s" from="0 50 50" to="180 50 50" type="rotate" id="strokeBox" attributeType="XML" begin="rectBox.end"></animateTransform>
+				</rect>
+				<rect x="27" y="27" fill="#fff" width="46" height="50" style="stroke: black;">
+					<animate attributeName="height" dur="1.3s" attributeType="XML" from="50" to="0" id="rectBox" fill="freeze" begin="0s;strokeBox.end"></animate>
+				</rect>
+			</svg>
+		</div>
+	</div>
+</div>-->
 </body>
 </html>
