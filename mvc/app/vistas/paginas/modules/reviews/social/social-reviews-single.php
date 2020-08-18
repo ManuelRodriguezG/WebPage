@@ -10,7 +10,7 @@
 		<div class="item ">
 			<div class="row container-profile-social-page">
 				<div class="image-profile-social-page">
-					<img class="img-profile-social-single" src="https://scontent.fgdl5-2.fna.fbcdn.net/v/t1.0-1/cp0/p50x50/73196204_2526055317490246_8914104120613273600_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=THHVEn4bIRgAX9up4Ll&_nc_ht=scontent.fgdl5-2.fna&oh=4778a56fae6fcf4ab6e15cdd793d88ba&oe=5F326FDB">
+					<img class="img-profile-social-single" src="image/logo/logoBw.png">
 				</div>
 				<div class="container-section-social-single">
 					<label>Black & White Bettas</label>
