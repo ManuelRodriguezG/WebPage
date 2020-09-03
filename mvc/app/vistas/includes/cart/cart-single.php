@@ -9,12 +9,21 @@
 		</button>
 
 	</div>
+	<style type="text/css">
+		.no_products{
+			text-align: center;
+		}
+		.label_no_products{
+			margin: 0;
+			padding: 10px;
+		}
+	</style>
 	<div class="container-info-cart">
-		<div style="text-align: center;">
-			<label style="margin: 0;padding: 10px;">No se han agregado productos</label>
+		<div class="no_products">
+			<label class="label_no_products">No se han agregado productos</label>
 		</div>
 		<div class="container-items">
-			<div class="container-item-cart">
+			<!--<div class="container-item-cart">
 				<div class="icon-trash-container">
 					<label class="label-icon-trash icon-trash">
 						<i class="fas fa-trash-alt icon-trash"></i>
@@ -85,7 +94,7 @@
 					</div>
 
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<div class="container-btns">
 			<div class="container-btns-cart">
@@ -96,23 +105,23 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$(".label-icon-trash").click(function(){
-			console.log("Change icon");
-			if($(this).hasClass("icon-trash")){
-				$(this).html('<i class="fas fa-times icon-times"></i>');
-				$(this).addClass("icon-times");
-				$(this).removeClass("icon-trash");
-			}else if($(this).hasClass("icon-times")){
-				$(this).html('<i class="fas fa-trash-alt icon-trash"></i>');
-				$(this).addClass("icon-trash");
-				$(this).removeClass("icon-times");
-			}
-			//setTimeout(function(){
-			//	$(this).html('<i class="fas fa-trash-alt icon-trash"></i>');
-			//	$(this).addClass("icon-trash");
-			//	$(this).removeClass("icon-times");
-			//},2000);
-		});
+		//$(".label-icon-trash").click(function(){
+		//	console.log("Change icon");
+		//	if($(this).hasClass("icon-trash")){
+		//		$(this).html('<i class="fas fa-times icon-times"></i>');
+		//		$(this).addClass("icon-times");
+		//		$(this).removeClass("icon-trash");
+		//	}else if($(this).hasClass("icon-times")){
+		//		$(this).html('<i class="fas fa-trash-alt icon-trash"></i>');
+		//		$(this).addClass("icon-trash");
+		//		$(this).removeClass("icon-times");
+		//	}
+		//	//setTimeout(function(){
+		//	//	$(this).html('<i class="fas fa-trash-alt icon-trash"></i>');
+		//	//	$(this).addClass("icon-trash");
+		//	//	$(this).removeClass("icon-times");
+		//	//},2000);
+		//});
 	})
 </script>
 <style type="text/css">
@@ -389,8 +398,38 @@
 		max-width: 250px;
 	}
 	.container-item-cart{
+		position: relative;
 		display: flex;
 		padding: 1rem;
+		transition: 2s;
+	}
+	.show_section_cart{
+		display: inherit !important;s
+	}
+	.effect-new-item{
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #94949485;
+		position: absolute;
+		transition: 2s;
+		opacity: 1;
+	}
+
+	.effect-delete-item{
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #94949485;
+		position: absolute;
+		transition: 2s;
+		opacity: ;
+	}
+
+	.show-effect{
+		opacity: 0;
 	}
 </style>
 
@@ -413,6 +452,7 @@
 				total:0,
 				data:null,
 				discount:0,
+				items_cant:0,
 				url_cart:"http://localhost/WebPage/mvc/cart"
 			};
 			
@@ -422,6 +462,8 @@
 			}else if(data != null){
 				this.options = $.extend({},defaults,data);
 				localStorage["cart"] = JSON.stringify(this.options);
+			}else if(localStorage["cart"]){
+				this.options = JSON.parse(localStorage["cart"]);
 			}else{
 				this.options = defaults;
 				localStorage["cart"] = JSON.stringify(defaults);
@@ -430,10 +472,209 @@
 			this.general_events();
 			this.ready();
 			this.updateCart();
+			this.updateHeadCart();
 		}
 
 		addItem(data){
 			console.log(localStorage["cart"]);
+			console.log(this.options.data == null);
+			if (this.options.data == null) {
+				var newData = [];
+				newData.push(data);
+				this.options.data = newData;
+				console.log(this.options);
+				this.updateHeadCart();
+				this.addItemCode(data);
+				this.showItemsCart();
+			}else{
+				console.log(this.options);
+				this.options.data.push(data);
+				this.updateHeadCart();
+				this.addItemCode(data);
+				this.showItemsCart();
+			}
+		}
+
+		addItemCode(data,efect = true){
+			console.log(data);
+			$(".btn-icon-cart").trigger("click");
+			var code = 
+			'<div class="container-item-cart">'+
+				'<div class="icon-trash-container">'+
+					'<label class="label-icon-trash icon-trash" id="item-'+data.item_id+'">'+
+						'<i class="fas fa-trash-alt icon-trash"></i>'+
+					'</label>'+
+				'</div>'+
+				'<div>'+
+					'<img src="'+data.url_image+'" class="image-cart">'+
+				'</div>'+
+				'<div class="container-info-item">'+
+					'<div class="info-item">'+
+						'<label>'+data.item_name+'</label>'+
+						'<label class="label_total_item">'+this.numberFormat(data.item_price)+'</label>'+
+					'</div>'+
+					'<div class="container-cant-item">'+
+						'<div class="number">'+
+							'<button class="number__btn number__btn--down"></button><input class="number__field" type="number" id="number1" min="1" step="1" value="'+data.quantity+'"><button class="number__btn number__btn--up"></button>'+
+						'</div>'+
+						'<label class="label_price_item">'+this.numberFormat(data.item_price*data.quantity)+'</label>'+
+					'</div>'+
+				'</div>'+
+			'</div>';
+			$(".container-items").append(code);
+			jQuery('.number').each(function() {
+					var spinner = jQuery(this),
+					input = spinner.find('.number__field'),
+					btnUp = spinner.find('.number__btn.number__btn--up'),
+					btnDown = spinner.find('.number__btn.number__btn--down'),
+					min = input.attr('min'),
+					max = input.attr('max'),
+					step = input.attr('step'); 
+					btnUp.click(function() {
+						var oldValue = parseFloat(input.val());
+						if (oldValue >= max) {
+							var newVal = oldValue;
+						} else {
+							var newVal = oldValue + parseFloat(step);
+						}
+						spinner.find("input").val(newVal);
+						spinner.find("input").trigger("change");
+					});
+
+					btnDown.click(function() {
+						var oldValue = parseFloat(input.val());
+						if (oldValue <= min) {
+							var newVal = oldValue;
+						} else {
+							var newVal = oldValue - parseFloat(step);
+						}
+						spinner.find("input").val(newVal); 
+						spinner.find("input").trigger("change");
+					});
+				});
+			$("#item-"+data.item_id)[0].addEventListener("click",this.deleteItem);
+			if(efect == true){
+				this.showEffectItemAdd($("#item-"+data.item_id)[0]);
+			}
+
+		}
+
+		showEffectItemAdd(elemento){
+			var div = document.createElement("div");
+				div.classList.add("effect-new-item");
+			$(elemento.parentNode.parentNode).append(div);
+			setTimeout(function(){
+				div.classList.add("show-effect");
+			},1000);
+			
+			setTimeout(function(){
+				div.remove();
+			},3000);
+		}
+
+		deleteItem(){
+			var $this,
+			$this = window["cart"];
+			console.log("delete item");
+			if($(this).hasClass("icon-trash")){
+				$(this).html('<i class="fas fa-times icon-times"></i>');
+				$(this).addClass("icon-times");
+				$(this).removeClass("icon-trash");
+			}else if($(this).hasClass("icon-times")){
+				$(this).html('<i class="fas fa-trash-alt icon-trash"></i>');
+				$(this).addClass("icon-trash");
+				$(this).removeClass("icon-times");
+				console.log(this.id);
+				var data = $this.options.data;
+				var id = this.id.substring(5);
+				console.log(id);
+
+				data.forEach(function(element,index,data){
+					console.log(element);
+					console.log(element.item_id);
+					if(element.item_id == id){
+						data.splice(index,1);
+
+					}
+				});
+				console.log(data);
+				if(data.length == 0){
+					$this.options.data = null;
+					$this.updateHeadCart();
+					localStorage["cart"] = JSON.stringify($this.options);
+					$this.hideEffectItemAdd(this);
+					$this.hideItemsCart();
+				}else{
+					$this.options.data = data;
+					$this.updateHeadCart();
+					localStorage["cart"] = JSON.stringify($this.options);
+					$this.hideEffectItemAdd(this);
+				}
+			}
+		}
+
+		hideEffectItemAdd(elemento){
+			
+			$(elemento.parentNode.parentNode)[0].classList.add("show-effect");
+			setTimeout(function(){
+				$(elemento.parentNode.parentNode).remove();
+			},3000);
+		}
+
+		/*
+			Update price and items cant
+		*/
+		updateHeadCart(){
+			var data = this.options.data;
+			var total = 0;
+			var items_cant = 0;
+			if(data != null){
+
+			
+			
+				[].forEach.call(data,function(elemento){
+					total += (elemento.item_price * elemento.quantity);
+					items_cant++;
+				});
+
+				if(total > 0){
+					this.options.items_cant = items_cant;
+					this.options.total = total;
+					$(".label_cant").text(this.options.items_cant);
+					$(".label_total").text(this.numberFormat(this.options.total));
+					localStorage["cart"] = JSON.stringify(this.options);
+					this.showInfoHead();
+				}
+			}else{
+				this.options.items_cant = items_cant;
+				this.options.total = total;
+				$(".label_cant").text(this.options.items_cant);
+				$(".label_total").text(this.numberFormat(this.options.total));
+				this.hideInfoHead();
+			}
+			console.log(this.options);
+		}
+
+		hideItemsCart(){
+			$(".no_products").css("display","inherit");
+			$(".container-items").removeClass("show_section_cart");
+			$(".container-btns").removeClass("show_section_cart");
+		}
+
+		showItemsCart(){
+			$(".no_products").css("display","none");
+			$(".container-items").addClass("show_section_cart");
+			$(".container-btns").addClass("show_section_cart");
+		}
+
+		hideInfoHead(){
+			$(".label_cant").removeClass("show_section_cart");
+			$(".label_total").removeClass("show_section_cart");
+		}
+
+		showInfoHead(){
+			$(".label_cant").addClass("show_section_cart");
+			$(".label_total").addClass("show_section_cart");
 		}
 
 		updateCart(){
@@ -447,48 +688,57 @@
 			});
 		}
 
+		numberFormat(number){
+			var formato = { style: 'currency', currency: 'USD' };
+	    	var getFormat = new Intl.NumberFormat('en-US', formato);
+			return getFormat.format(number);
+		}
+		
+
 		general_events(){
 			/*
 				Cart information container transition
 				*/
 				$(".btn-icon-cart").click(function(){
-				//Extra small    < 576px
-				//small          >= 576px
-				//Medium         >= 768px
-				//Large          >= 992px
-				//Extra Large	   >= 1200px
-				console.log($(document).width());
-				var width = $(document).width();
-				/*--- SMALL ---*/
-				if(width <= 576){
-					$(".container-info-cart").css("width",+width+"px");
-					$(".container-info-cart").css("max-width",+width+"px");
-					if($(".container-info-cart").hasClass("show-info-cart")){
-						$(".container-info-cart").removeClass("show-info-cart");
-						$(".container-info-cart").css("transform","translateX("+width+"px)");
-					}else{
-						$(".container-info-cart").addClass("show-info-cart");
+					//Extra small    < 576px
+					//small          >= 576px
+					//Medium         >= 768px
+					//Large          >= 992px
+					//Extra Large	   >= 1200px
+					console.log($(document).width());
+					var width = $(document).width();
+					/*--- SMALL ---*/
+					if(width <= 576){
+						$(".container-info-cart").css("width",+width+"px");
+						$(".container-info-cart").css("max-width",+width+"px");
+						if($(".container-info-cart").hasClass("show-info-cart")){
+							$(".container-info-cart").removeClass("show-info-cart");
+							$(".container-info-cart").css("transform","translateX("+width+"px)");
+						}else{
+							$(".container-info-cart").addClass("show-info-cart");
+						}
+						/*--- MEDIUM - EXTRA LARGE ---*/
+					}else if(width > 576){
+						$(".container-info-cart").css("width","auto");
+						$(".container-info-cart").css("max-width","500px");
+						if($(".container-info-cart").hasClass("show-info-cart")){
+							$(".container-info-cart").removeClass("show-info-cart");
+							$(".container-info-cart").css("transform","translateX("+$(".container-info-cart").width()+"px)");
+						}else{
+							$(".container-info-cart").addClass("show-info-cart");
+						}
 					}
-					/*--- MEDIUM - EXTRA LARGE ---*/
-				}else if(width > 576){
-					$(".container-info-cart").css("width","auto");
-					$(".container-info-cart").css("max-width","500px");
-					if($(".container-info-cart").hasClass("show-info-cart")){
-						$(".container-info-cart").removeClass("show-info-cart");
-						$(".container-info-cart").css("transform","translateX("+$(".container-info-cart").width()+"px)");
-					}else{
-						$(".container-info-cart").addClass("show-info-cart");
-					}
-				}
-				//if($(".container-info-cart").hasClass("show-info-cart")){
-				//	$(".container-info-cart").removeClass("show-info-cart");
-				//}else{
-				//	$(".container-info-cart").addClass("show-info-cart");
-				//}
-			})
+					//if($(".container-info-cart").hasClass("show-info-cart")){
+					//	$(".container-info-cart").removeClass("show-info-cart");
+					//}else{
+					//	$(".container-info-cart").addClass("show-info-cart");
+					//}
+				});
+
+				
 			}
 		}
-
+		//localStorage.removeItem("cart");
 		window["cart"] = new Cart(/*{
 			discount:0,
 			data:{
@@ -521,18 +771,21 @@
 					"item_price"=>65,
 					"quantity"=>2,
 					"url_image"=>"http://localhost/WebPage/mvc/image/products/calentador.jpg",
+					"item_id"=>1
 				),
 				array(
 					"item_name"=>"Pecera Panorámica 5L",
 					"item_price"=>65,
 					"quantity"=>2,
 					"url_image"=>"http://localhost/WebPage/mvc/image/products/pecera_panoramica_20cm.png",
+					"item_id"=>2
 				),
 				array(
 					"item_name"=>"Alimento para Hámster",
 					"item_price"=>65,
 					"quantity"=>2,
 					"url_image"=>"http://localhost/WebPage/mvc/image/products/comida_hamster.png",
+					"item_id"=>3
 				)
 			)
 		); ?>;
@@ -541,7 +794,8 @@
 			item_name:"Alimento para Hámster",
 			item_price:65,
 			quantity:2,
+			item_id:555,
 			url_image:"http://localhost/WebPage/mvc/image/products/comida_hamster.png",
 		};
-		window["cart"].addItem(info);
+		//window["cart"].addItem(info);
 	</script>
