@@ -98,7 +98,8 @@
 		</div>
 		<div class="container-btns">
 			<div class="container-btns-cart">
-				<button class="btn btn-primary btn-continue-shopping">Continuar Compra</button>
+				<button class="btn btn-primary btns_footer_cart btn-clean-shopping">Vaciar</button>
+				<button class="btn btn-primary btns_footer_cart btn-continue-shopping">Continuar Compra</button>
 			</div>
 		</div>
 	</div>
@@ -125,8 +126,13 @@
 	})
 </script>
 <style type="text/css">
+
+	
 	.container-items{
 		display: none;
+		max-height: 288px;
+		overflow-y: auto;
+		transition: 2s;
 	}
 	.container-btns{
 		display: none;
@@ -159,6 +165,7 @@
 	}
 	.label_total{
 		margin: 0;
+		cursor: pointer;
 		color: black;
 		font-size: 13px;
 		position: relative;
@@ -168,6 +175,7 @@
 	.label_cant{
 		position: absolute;
 		display: none;
+		cursor: pointer;
 		margin: 0;
 		top: 0;
 		background: black;
@@ -176,11 +184,11 @@
 		right: 8px;
 		border-radius: 0px 0px 3px 3px;
 	}
-	.btn-continue-shopping:hover{
+	.btns_footer_cart:hover{
 		background: #b0ded3;
 		border: 2px solid #b0ded3;
 	}
-	.btn-continue-shopping{
+	.btns_footer_cart{
 		border: 2px solid #b0ded3;
 		border-radius: 20px;
 		background: white;
@@ -330,12 +338,15 @@
 	input[type="checkbox"].switch_1:checked:after{
 		left: calc(100% - 1.5em);
 	}
+	@media only screen and (max-width: 1200px) {
+		.container-items{
+			max-height: 192px;
+		}
+	}
 </style>
 <script type="text/javascript">
-	jQuery('<button class="number__btn number__btn--down"></button>').insertBefore('.number__field');
-	jQuery('<button class="number__btn number__btn--up"></button>').insertAfter('.number__field');
-
-	jQuery('.number').each(function() {
+	
+	/*jQuery('.number').each(function() {
 		var spinner = jQuery(this),
 		input = spinner.find('.number__field'),
 		btnUp = spinner.find('.number__btn.number__btn--up'),
@@ -364,7 +375,7 @@
 			spinner.find("input").val(newVal);
 			spinner.find("input").trigger("change");
 		});
-	});
+	});*/
 </script>
 <style type="text/css">
 	.container-cart-single{
@@ -497,7 +508,7 @@
 
 		addItemCode(data,efect = true){
 			console.log(data);
-			$(".btn-icon-cart").trigger("click");
+			
 			var code = 
 			'<div class="container-item-cart">'+
 				'<div class="icon-trash-container">'+
@@ -515,48 +526,103 @@
 					'</div>'+
 					'<div class="container-cant-item">'+
 						'<div class="number">'+
-							'<button class="number__btn number__btn--down"></button><input class="number__field" type="number" id="number1" min="1" step="1" value="'+data.quantity+'"><button class="number__btn number__btn--up"></button>'+
+							'<button class="number__btn number__btn--down" id="button-down-'+data.item_id+'"></button><input class="number__field" type="number" id="number1" min="1" step="1" value="'+data.quantity+'"><button class="number__btn number__btn--up" id="button-up-'+data.item_id+'"></button>'+
 						'</div>'+
 						'<label class="label_price_item">'+this.numberFormat(data.item_price*data.quantity)+'</label>'+
 					'</div>'+
 				'</div>'+
 			'</div>';
 			$(".container-items").append(code);
-			jQuery('.number').each(function() {
-					var spinner = jQuery(this),
-					input = spinner.find('.number__field'),
-					btnUp = spinner.find('.number__btn.number__btn--up'),
-					btnDown = spinner.find('.number__btn.number__btn--down'),
-					min = input.attr('min'),
-					max = input.attr('max'),
-					step = input.attr('step'); 
-					btnUp.click(function() {
-						var oldValue = parseFloat(input.val());
-						if (oldValue >= max) {
-							var newVal = oldValue;
-						} else {
-							var newVal = oldValue + parseFloat(step);
-						}
-						spinner.find("input").val(newVal);
-						spinner.find("input").trigger("change");
-					});
-
-					btnDown.click(function() {
-						var oldValue = parseFloat(input.val());
-						if (oldValue <= min) {
-							var newVal = oldValue;
-						} else {
-							var newVal = oldValue - parseFloat(step);
-						}
-						spinner.find("input").val(newVal); 
-						spinner.find("input").trigger("change");
-					});
-				});
+			
 			$("#item-"+data.item_id)[0].addEventListener("click",this.deleteItem);
+			$("#button-up-"+data.item_id)[0].addEventListener("click",this.buttonUp);
+			$("#button-down-"+data.item_id)[0].addEventListener("click",this.buttonDown);
 			if(efect == true){
+				$(".btn-icon-cart").trigger("click");
 				this.showEffectItemAdd($("#item-"+data.item_id)[0]);
 			}
 
+		}
+
+		buttonUp(){
+			console.log(this);
+			var $this,data,idItem,element;
+			$this = window["cart"];
+			$this.btnsControl(this.parentNode,"up");
+			console.log($this.options);
+			console.log(this.id.substring(10));
+			data = $this.options.data;
+			console.log(data);
+			idItem = this.id.substring(10);
+			element = this;
+			data.forEach(function(elemento,index,data){
+				if(elemento.item_id == idItem){
+					elemento.quantity = elemento.quantity + 1;
+					$(element.parentNode.parentNode).find(".label_price_item").text($this.numberFormat(elemento.quantity*elemento.item_price));
+				}
+			});
+			console.log(data);
+			$this.options.data = data;
+			localStorage["cart"] = JSON.stringify($this.options);
+			$this.updateHeadCart();
+		}
+
+		buttonDown(){
+			console.log(this);
+			var $this,data,idItem,element;
+			$this = window["cart"];
+			$this.btnsControl(this.parentNode,"down");
+			console.log($this.options);
+			console.log(this.id.substring(12));
+			data = $this.options.data;
+			console.log(data);
+			idItem = this.id.substring(12);
+			element = this;
+			data.forEach(function(elemento,index,data){
+				if(elemento.item_id == idItem){
+					console.log(elemento.quantity);
+					if(elemento.quantity > 1){
+						elemento.quantity = elemento.quantity - 1;
+						$(element.parentNode.parentNode).find(".label_price_item").text($this.numberFormat(elemento.quantity*elemento.item_price));
+					}
+				}
+			});
+			console.log(data);
+			$this.options.data = data;
+			localStorage["cart"] = JSON.stringify($this.options);
+			$this.updateHeadCart();
+		}
+
+		btnsControl(elemento,direction){
+			//jQuery('.number').each(function() {
+				var spinner = jQuery(elemento),
+				input = spinner.find('.number__field'),
+				btnUp = spinner.find('.number__btn.number__btn--up'),
+				btnDown = spinner.find('.number__btn.number__btn--down'),
+				min = input.attr('min'),
+				max = input.attr('max'),
+				step = input.attr('step'); 
+				if(direction == "up"){
+					var oldValue = parseFloat(input.val());
+					if (oldValue >= max) {
+						var newVal = oldValue;
+					} else {
+						var newVal = oldValue + parseFloat(step);
+					}
+					spinner.find("input").val(newVal);
+					spinner.find("input").trigger("change");
+				}else if(direction == "down"){
+					var oldValue = parseFloat(input.val());
+					if (oldValue <= min) {
+						var newVal = oldValue;
+					} else {
+						var newVal = oldValue - parseFloat(step);
+					}
+					spinner.find("input").val(newVal);
+					spinner.find("input").trigger("change");
+				}
+				
+			//});
 		}
 
 		showEffectItemAdd(elemento){
@@ -680,12 +746,54 @@
 		updateCart(){
 			
 			console.log(this.options);
+			if(this.options.data != null){
+				var data,$this;
+				data = this.options.data;
+				console.log(data);
+				$this = this;
+				data.forEach(function(elemento,index,data){
+					console.log(elemento);
+					$this.addItemCode(elemento,false);
+					//$this.updateHeadCart();
+					
+				});
+				$this.showItemsCart();
+			}
 		}
 
 		ready(){
+			var $this = this; 
 			$(document).ready(function(){
 				$(".container-info-cart").css("display","inherit");
 			});
+			//asign url cart button
+			$(".btn-continue-shopping").click(function(){
+				window.location = $this.options.url_cart;
+			});
+			//asign event clean shooping cart
+			$(".btn-clean-shopping").click(function(){
+				$this.cleanCart();
+			});
+
+		}
+
+		cleanCart(){
+			var $this = this;
+			var defaults = {
+				total:0,
+				data:null,
+				discount:0,
+				items_cant:0,
+				url_cart:"http://localhost/WebPage/mvc/cart"
+			};
+			this.options = defaults;
+			localStorage["cart"] = JSON.stringify(this.options);
+			$(".container-items")[0].classList.add("show-effect");
+			setTimeout(function(){
+				$(".container-items").remove();
+				$this.hideItemsCart();
+				$this.updateHeadCart();
+			},3000);
 		}
 
 		numberFormat(number){
