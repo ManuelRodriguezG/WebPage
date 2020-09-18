@@ -23,7 +23,7 @@
 			<label class="label_no_products">No se han agregado productos</label>
 		</div>
 		<div class="container-items">
-			<!--<div class="container-item-cart">
+		<!--<div class="container-item-cart">
 				<div class="icon-trash-container">
 					<label class="label-icon-trash icon-trash">
 						<i class="fas fa-trash-alt icon-trash"></i>
@@ -99,7 +99,7 @@
 		<div class="container-btns">
 			<div class="container-btns-cart">
 				<button class="btn btn-primary btns_footer_cart btn-clean-shopping">Vaciar</button>
-				<button class="btn btn-primary btns_footer_cart btn-continue-shopping">Continuar Compra</button>
+				<button class="btn btn-primary btns_footer_cart btn-continue-shopping">Ver carrito</button>
 			</div>
 		</div>
 	</div>
@@ -538,7 +538,10 @@
 			$("#button-up-"+data.item_id)[0].addEventListener("click",this.buttonUp);
 			$("#button-down-"+data.item_id)[0].addEventListener("click",this.buttonDown);
 			if(efect == true){
-				$(".btn-icon-cart").trigger("click");
+				if(!$(".container-info-cart").hasClass("show-info-cart")){
+					$(".btn-icon-cart").trigger("click");
+				}
+				
 				this.showEffectItemAdd($("#item-"+data.item_id)[0]);
 			}
 
