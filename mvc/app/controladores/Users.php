@@ -10,6 +10,7 @@ class Users extends Controlador {
     var_dump('create_account');
     var_dump($_POST);
     //$this->vista("login");
+    
     $this->vista('login', '');
   }
 
